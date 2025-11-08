@@ -11,8 +11,6 @@ var result= a+b;
 
 var sub=a-b;
 
-
-
 console.log(result);
 console.log(sub);
 
