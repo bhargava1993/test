@@ -26,7 +26,7 @@ iife (imedetely invoked functions)
 
 arrays
 18 methods
-objcts - methods
+objects - methods
 
 deep copy
 shalow copy
