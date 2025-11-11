@@ -1,0 +1,72 @@
+String DataType: It is used store collection of characters within single quotes('') and double quotes ("")
+
+example:
+
+var animal = "Elephant";
+console.log(animal);
+console.log(typeof animal);
+
+
+Number: It is used to store integers, decimal numbers
+
+example: 
+
+var ph_number = 123456788;
+console.log(ph_number);
+console.log(typeof ph_number);
+
+
+var bankbalance = 23.6;
+console.log(bankbalance);
+console.log(typeof bankbalance);
+
+
+Boolean: It is like true or false and 0 and 1
+
+example: 
+
+var status = true;
+console.log(status);
+console.log(typeof status);
+
+
+undefined: A variable is declared but not assigned values 
+
+example:
+
+var  a = 10;
+var b = 20;
+var result;
+result = a + b;
+console.log(result);
+console.log(typeof result);
+
+Null: it is no value or empty values by intentionally
+
+example:
+
+var login = null;
+console.log(login);
+console.log(typeof login);
+
+
+Array: It is used to store multiple data types within []
+
+example:
+
+var vowels = ['a','e','i','o','u'];
+console.log(vowels);
+console.log(typeof vowels);
+
+Objects: Collections of key value pairs within {}
+
+example:
+
+var familynames: {
+    fatherName: "Narayana Swamy";
+    motherName: "Sathyamma";
+    grandMotherName: "Gangamma";
+    myName: "Sudheer Kumar";
+}
+console.log(familynames);
+console.log(typeof familynames);
