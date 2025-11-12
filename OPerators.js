@@ -114,3 +114,66 @@ var a = 20;
 var post_increment = a++;
 console.log("line--->115", post_increment);
 console.log("line--->116", a);
+
+
+
+// Null Operators
+
+console.log("line ---> 122", 0 / 0);
+console.log("line--->123", "venu" / 10);
+console.log("line ---> 1124", 10 / "venu");
+console.log("line --->125", NaN === NaN);
+console.log("line--->126", 10 * "venu");
+
+
+
+console.log("line ---->127", 10 + "venu");        // only "+" operator will work and it is the concatenation(adding)
+
+
+console.log(parseInt("abc"));
+console.log(Number.isNaN(NaN));
+console.log(isNaN("abc"));
+
+
+
+
+// Logical Operators
+//// It is used to combine multiple conditions 
+
+//   && ---> Logical AND ( if any one conditin is false then it passes the result is false)
+//                         (or)
+//  ( If All conditions are true then it passes the result is true)
+
+
+//   || ---> Logical OR (if any one consition is true then it passes the result is true)
+//                           (or)
+//    (If All consitions are false then it passes the result is false)                      
+
+var a = 150, b = 50, c = 100;
+console.log("line--->144", (a > b) && (a > c));
+
+console.log("line--->146", (a < b) && (b < c));
+
+console.log("line--->148", (a > b) || (b > c));
+
+console.log("line---->150", (a < c) || (c > b));
+
+console.log("line--->152", (a > c) && (a > b) || (c > b));
+
+console.log("line--->154", (a < c) && (a < b) || (c > b));
+
+console.log("line--->156", (a < c) && (a < b) || (c < b));
+
+console.log("line--->158", (a < c) || (a < b) || (c > b));
+
+console.log("line--->160", (a < c) && (a < b) && (c > b));
+
+console.log("line--->162", (a < c) || (a < b) && (c > b));
+
+
+// ! ---> Not
+
+console.log("line--->176", !true);
+console.log("line--->177", !false);
+console.log("line--->178", !150);
+console.log("line--->179", !(-150))
