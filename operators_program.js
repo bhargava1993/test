@@ -168,11 +168,24 @@
 // console.log(!(true && false));
 
 var a=10, b=40, c=30;
+var result1=a<b;
 
-10 < 40 <30
+console.log(result1 < c);
+console.log(result1 > c)
 
-console.log((a<b) && (b<c));
-console.log(a<b>c);
+
+priority:
+---------------
+
+number high (postive numbers)
+Boolean(true, false)
+negetive values(0,-1, -2,)
+
+// console.log((a<b) && (b<c));
+// console.log(a<b<c);
+// console.log(a<b>c);
+
+
 
 // console.log( ((a < b) && (a>c)) || (a<c)  );
 
