@@ -23,10 +23,10 @@
 
 // -------------------------
 
-// let number = 10;
-// console.log(number);
-// number = 20;
-// console.log(number);
+let number = 10;
+console.log(number);
+number = 20;
+console.log(number);
 
 // ----------------------------
 
@@ -39,24 +39,24 @@
 // functional -- we can access global variables but you can't access inside functional variable
 // block leavel -- {} --> you can't able to access out side of block
 
-var firstName = "bharagva";
+// var firstName = "bharagva";
 
 
-function sample(){
+// function sample(){
 
-    let calssName="javascript";
+//     let calssName="javascript";
 
-    if(true){
-        console.log("50--------",calssName);
-        let batchName="full stack";
-        console.log("52--------",batchName);
-    }
-    console.log("53--------",calssName);
+//     if(true){
+//         console.log("50--------",calssName);
+//         let batchName="full stack";
+//         console.log("52--------",batchName);
+//     }
+//     console.log("53--------",calssName);
  
-        console.log("56--------",batchName);
+//         console.log("56--------",batchName);
 
-}
-sample();
+// }
+// sample();
 
 
 // let className="javascript";
