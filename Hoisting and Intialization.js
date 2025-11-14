@@ -10,17 +10,12 @@
 // It will will not work in "let" and "const" keyword.
 // It will works only on variables and fuctions.
 
-'use strict';
-a = 100;
-console.log(a);
-a = 200;
-console.log(a)
-
-
-
-
-
-
+// 'use strict';
+// a = 100;
+// console.log(a);
+// a = 200;                
+// console.log(a)
+// It shows an error because we will use keyword "use strict",we cannot redeclare.
 
 
 
@@ -98,9 +93,10 @@ console.log(a)
 // output ---> Undefined
 
 
-// subject = "Social";
-// console.log(subject);        // Hoisted variable
-// var subject;
+subject = "Social";
+console.log(subject);        // Hoisted variable
+var subject;
+
 // output ----> Social
 
 
