@@ -3,8 +3,8 @@
 // Three ways to declare variable
 //
 // 1.var
-// 2.Let 
-// 3.const 
+// 2.Let
+// 3.const
 
 
 // 1.var
@@ -107,17 +107,19 @@
 
 // In Block level scope, we can use variable only in that block otherwise it will not work
 
-function cityname() {
-    let city = "Hyderabad"
-    console.log(city)                      // It will work
-    if (true) {
-        let fruit = "Orange"
-        console.log(fruit)                 // It will work
-        console.log(city)                  // It will work
-    }
-    console.log(fruit)                     // It will not work
-    return;
-}
-cityname()
+// function cityname() {
+//     let city = "Hyderabad"
+//     console.log(city)                      // It will work
+//     if (true) {
+//         let fruit = "Orange"
+//         console.log(fruit)                 // It will work
+//         console.log(city)                  // It will work
+//     }
+//     console.log(fruit)                     // It will not work
+//     return;
+// }
+// cityname()
 
-console.log(city);                     // It will not work
+// console.log(city);                     // It will not work
+
+
