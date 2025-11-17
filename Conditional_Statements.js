@@ -275,31 +275,197 @@
 
 
 
-let marks = 26;
+// let marks = 26;
 
-if (marks >= 90 && marks <= 100) {
-    console.log("The student is passed");
-    console.log("Grade A+");
-} else if (marks >= 80 && marks < 90) {
-    console.log("The student is passed");
-    console.log("Grade A")
-} else if (marks >= 70 && marks < 80) {
-    console.log("The student is passed ");
-    console.log("Grade B+");
-} else if (marks >= 60 && marks < 70) {
-    console.log("The student is passed");
-    console.log("Grade B");
-} else if (marks >= 50 && marks < 60) {
-    console.log("The student is passed");
-    console.log("Grade C");
-} else if (marks >= 35 && marks < 50) {
-    console.log("The student is passed");
-    console.log("Grade D");
-} else {
-    console.log("The student is failed");
-    console.log("Grade E");
-}
+// if (marks >= 90 && marks <= 100) {
+//     console.log("The student is passed");
+//     console.log("Grade A+");
+// } else if (marks >= 80 && marks < 90) {
+//     console.log("The student is passed");
+//     console.log("Grade A")
+// } else if (marks >= 70 && marks < 80) {
+//     console.log("The student is passed ");
+//     console.log("Grade B+");
+// } else if (marks >= 60 && marks < 70) {
+//     console.log("The student is passed");
+//     console.log("Grade B");
+// } else if (marks >= 50 && marks < 60) {
+//     console.log("The student is passed");
+//     console.log("Grade C");
+// } else if (marks >= 35 && marks < 50) {
+//     console.log("The student is passed");
+//     console.log("Grade D");
+// } else {
+//     console.log("The student is failed");
+//     console.log("Grade E");
+// }
 
 
 // output----> The student is failed
 //             Grade E
+
+
+// Nested if - else conditional statements
+
+// Age + Citizenship Check
+
+// let age = 14;
+// let citizen = true;
+
+// if (age >=18){
+//     if (citizen = true){
+//         console.log("You are eligible for vote");
+//     }else{
+//         console.log("You are not a citizen to vote");
+//         console.log("You must be a citizen to vote");
+//     }
+// }else{
+//     console.log("You are too younger");
+//     console.log("You are not eligible to vote");
+// }
+
+
+
+// output ----> You are too younger
+//       -----> You are not eligible to vote 
+
+
+
+
+// Checking Login 
+
+// let username = "Jagan";
+// let password = "12345";
+
+// if (username == "Venu") {
+//     if (password == "12345") {
+//         console.log("Login Succesful..!, Welcome Venu");
+//     } else {
+//         console.log("Incorrect Password");
+//         console.log("Try again");
+//     }
+// } else {
+//     console.log("username not found");
+//     console.log("Try again");
+// }
+
+
+
+// output -----> username not found
+//       -------> Try again
+
+
+
+
+//  Grade Calculator
+
+// let score = 74;
+
+// if (score >= 0 && score <= 100) {
+//     if (score >= 90) {
+//         console.log("Grade A");
+//     } else if (score >= 80) {
+//         console.log("Grade B");
+//     } else if (score >= 70) {
+//         console.log("Grade C");
+//     } else if (score >= 60) {
+//         console.log("Grade D");
+//     } else if (score >= 50) {
+//         console.log("Grade E");
+//     } else if (score < 50) {
+//         console.log("Grade F");
+//     }
+// } else {
+//     console.log("Invalid score")
+// }
+
+
+// output ----> Grade C
+
+
+
+
+// The Number is positive,Negative,Zero,even and odd
+
+// let num = -90;
+
+// if (num > 0) {
+//     if (num % 2 == 0) {
+//         console.log("The Number is Positive and Even");
+//     } else if (num % 2 != 0) {
+//         console.log("The Number is Positive and Odd");
+//     }
+// } else if (num < 0) {
+//     if (num % 2 == 0) {
+//         console.log("The Number is Negative and Even");
+//     } else if (num % 2 != 0) {
+//         console.log("The Number is Negative and Odd");
+
+//     }
+// } else {
+//     console.log("The Number is Zero");
+// }
+
+
+// output ----> The Number is Negative and 
+
+
+
+//  ATM Withdrawl Logic 
+
+// let amount = 1000;
+// let withdraw = 40000;
+
+// if (withdraw > 0) {
+//     if (withdraw < amount) {
+//         console.log("Withdraw Successful");
+//     } else {
+//         console.log("Insufficient Balance");
+//     }
+// } else {
+//     console.log("Invalid Amount...!");
+//     console.log("Please..., Re-Enter the Amount");
+// }
+
+
+
+
+// output ----->  Insufficient Balance
+
+
+
+//  Temperature Check
+
+// let temp = 45;
+
+// if (temp >= 0) {
+//     if (temp <= 30) {
+//         console.log("Temperature is Normal");
+//     } else {
+//         console.log("Its Hot Outside");
+//     }
+// } else {
+//     console.log("Freezing");
+// }
+
+
+
+// Output -----> Its Hot Outside
+
+
+
+// Shopping Discount
+
+let amount = 500;
+
+if (amount > 50) {
+    if (amount >= 500) {
+        console.log("You get 50% discount");
+    } else if (amount >= 100) {
+        console.log("You get 20% discount");
+    } else {
+        console.log("You get 10% discount");
+    }
+} else {
+    console.log("No discount")
+}
