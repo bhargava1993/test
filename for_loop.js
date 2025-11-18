@@ -97,3 +97,45 @@
 
 
 
+
+//  To check the Prime number using for loop
+
+// let num = 17;
+// let isPrime = true;
+
+// for (i = 2; i < num; i += 1) {
+//     if (num % 2 == 0) {
+//         isPrime = false;
+//         break;
+//     }
+// }
+
+// if (num <= 1) {
+//     console.log("The number is not a prime number");
+// } else if (isPrime) {
+//     console.log("The number is a prime number");
+// } else {
+//     console.log("The number is not prime number");
+// }
+
+
+
+
+let num = 18;
+let isPrime = true;
+
+for (i = 2; i < num; i += 1) {
+    if (num % 2 == 0 || num % 3 == 0 || num % 4 == 0 || num % 5 == 0) {
+        isPrime = false;
+        break;
+    }
+}
+
+if (num <= 1) {
+
+    console.log(num, "is not a prime nuber");
+} else if (isPrime) {
+    console.log(num, "is a prime number");
+} else {
+    console.log(num, "is not a prime number");
+}
