@@ -88,6 +88,21 @@ if (age >= 21) {
 let username = "admin";
 let password = "1234";
 
+console.log(username === "admin");
+console.log( password === "1234");
+
+
+
+if(username === "admin"){
+    if(password === "1234"){
+    console.log("this persion is correct");
+    }else{
+        console.log("password is wrong");
+    }
+}else{
+console.log("Username not found.");
+}
+
 if (username === "admin") {
     if (password === "1234") {
         console.log("Login successful. Welcome, Admin!");

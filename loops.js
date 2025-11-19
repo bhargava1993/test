@@ -257,11 +257,11 @@
 
 
 
-let firstClass=[ "Liam", "Olivia",  "venu", "Noah", "Emma",];
+// let firstClass=[ "Liam", "Olivia",  "venu", "Noah", "Emma",];
 
-// console.log(firstClass[2]);
+// // console.log(firstClass[2]);
 
-// console.log(firstClass[4]  === "venu");
+// // console.log(firstClass[4]  === "venu");
 
 // console.log("old one--------",firstClass);
 
@@ -275,3 +275,169 @@ let firstClass=[ "Liam", "Olivia",  "venu", "Noah", "Emma",];
 // }
 
 // console.log("old one--------",firstClass);
+
+
+// let firstClass=[ "Liam", "Olivia",  "venu", "Noah", "Emma",];
+
+
+// console.log("old one--------",firstClass);
+
+// for(let i=0; i< firstClass.length;i++){
+
+//     if(firstClass[i]  === "venu"){
+//         // console.log("venu avaliable");
+//         firstClass[i] = "sudher";
+//     }
+
+// }
+
+// firstClass.pop();
+// console.log("old one--------",firstClass);
+
+
+// factorial:
+// ---------------
+
+// 5!
+
+// 5*4*3*2*1= 120
+
+// let number=5;
+
+// 5 - 1
+
+// 1 to 100;
+
+// 1 ending 100 --> ++
+
+// let i=1; i<=   100;i++
+
+// 100 - 1; --
+
+// let i=100;  1 < i ;i--
+
+// 5!
+
+// 5*4*3*2*1= 120
+
+// 120 *1 = 120
+// 5*1 = 5
+
+
+// let name= "babu";
+
+// name="bhargava";
+
+// let salray = 300000;
+
+// slary= 10000 * 12;
+
+
+
+// 10 = sum of 10 numbers;
+
+// 10+9+8+7+6+5+4+3+2+1
+
+
+
+// let result=0;
+
+// // console.log(result * 4);
+
+// for(let i=10; i >= 1; i--){
+
+//     result = result + i;   
+// }
+
+// console.log(result);
+
+// let array = [100,500,600,1000,3,5,8,9];
+// let sum=0;
+
+// for(let i=0; i < array.length; i++){
+//     // console.log(array[i]);
+//     sum = sum + array[i];
+// }
+// console.log(sum);
+
+// 2 * 1 = 2
+// 2 * 2 =4
+// 2 * 3 =6
+// 2 * 4 = 8
+// 2 * 5 = 10
+// 2* 6 = 12
+// 2* 7 =14
+// 2* 8 =16
+// 2* 9 =18
+// 2* 10 =20
+
+
+
+// let number= 22;
+// let result;
+
+// for(let i = 1; i<=10 ;i++){
+    
+//     // console.log(i);
+//     // result = number * i;
+//     // console.log(result);
+
+//     console.log(number + "*" +i +"="+ number*i );
+
+//     //  console.log( 6 + "*" +i +"="+ 6*i );
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+// const citrus = fruits.slice(3);
+// console.log(citrus);
+
+// const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+// const citrus = fruits.slice(1,3);
+// console.log(citrus);
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// fruits.splice(2, 0, "Lemon", "Kiwi");
+// console.log(fruits);
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// fruits.splice(2, 2, "Lemon", "Kiwi");
+// console.log(fruits);
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// fruits.splice(0, 1);
+// console.log(fruits);
