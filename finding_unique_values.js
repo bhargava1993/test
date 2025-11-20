@@ -37,14 +37,17 @@ console.log(unique);
 
 
 
-for (let i = 0; i < fruits.length; i += 1) {
-    // console.log(fruits[i]);
 
-    if (!unique.includes(fruits[i])) {
-        unique.push(fruits[i]);
-    }
-}
-console.log(unique);
+
+
+// for (let i = 0; i < fruits.length; i += 1) {
+//     // console.log(fruits[i]);
+
+//     if (!unique.includes(fruits[i])) {
+//         unique.push(fruits[i]);
+//     }
+// }
+// console.log(unique);
 
 
 
