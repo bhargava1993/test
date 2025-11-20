@@ -171,6 +171,11 @@
 //pop -- is going to remove one element at the end
 //shift -- is going to remove one element from staring of an array
 //unshift -- is going to add one element from staring of an array
+// indexOf  -- it will give you index number of an element else it will give you -1
+// inclueds -- it will give you true or false (if values is exists then true else false)
+
+//slice
+//splice
 
 // "Oliver", "Ava", "Elijah", "Sophia", "William", "Isabella"
 
@@ -388,6 +393,66 @@
 // }
 
 
+// let names=[ "Liam", "Olivia",  "venu", "Noah", "Emma","sudher","venu"];
+
+// for(let i=0; i< names.length;i++){
+
+//     if(names[i]  === "venu"){
+//         console.log("venu index position--",i);
+//         // names[i] ="bhargava";
+//     }
+
+// }
+// console.log(names);
+
+// console.log(names.indexOf("venu"));
+
+// console.log(names.includes("venu"));
+
+// uniques array
+// let names=[ "sudher","Liam", "Olivia",  "venu", "Noah", "Emma","sudher","venu"];
+// console.log(names.indexOf("bhargava"));
+
+// console.log([...new Set(names)]);
+// let uniqueArray=[]
+
+// for(let i=0; i<names.length; i++){
+  
+//     let exsits = uniqueArray.includes(names[i]);
+
+//     if(!exsits){
+//     uniqueArray.push(names[i]);
+//     }
+
+// }
+
+// console.log("uniqueArray----",uniqueArray);
+
+// index- 2
+// end index - 5
+
+// let startIndex = 2;
+// let endIndex=5
+// let newArray=[];
+
+// for(let i=0; i<names.length; i++){
+
+//     if((i>=2) && (i<=5)){
+//         // console.log(i);
+//         newArray.push(names[i]);
+//     }
+    
+// }
+
+// console.log(newArray);
+
+// find unique values using indexof method
+// find duplicate values
+
+// let names=[ "sudher","Liam", "Olivia",  "venu", "Noah", "Emma","sudher","venu"];
+// let names1="hargava";
+// // console.log(typeof names);
+// console.log(Array.isArray(names));
 
 
 
