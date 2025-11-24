@@ -422,23 +422,244 @@
 // }
 
 
-let cars = {
-    "Audi": "4",
-    "BMW": "2",
-    "XUV": "6",
-    "Lamburgini": "10",
-    "KIA": "6"
+// let cars = {
+//     "Audi": "4",
+//     "BMW": "2",
+//     "XUV": "6",
+//     "Lamburgini": "10",
+//     "KIA": "6"
+// }
+
+
+// let keys = Object.keys(cars);
+// console.log(keys);
+
+
+
+// for (let i = 0; i < keys.length; i++) {
+//     // console.log(keys[i]);
+//     // console.log(cars[keys[i]]);
+//     console.log(keys[i] + "=" + cars[keys[i]]);
+// }
+
+
+// Count the vowels in a String
+
+// let str = "Venukumar";
+
+// let vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+// let count = 0;
+
+// for (let i = 0; i < str.length; i++) {
+//     if (vowels.includes(str[i])) {
+//         count = count + 1;
+//     }
+// }
+// console.log(count);
+
+
+// let a = "Jagan";
+// let vowels = "aeiouAEIOU";
+
+// let count = 0;
+
+// for (let i = 0; i < a.length; i++) {
+//     if (vowels.includes(a[i])) {
+//         count += 1;
+//     }
+// }
+// console.log(count);
+
+
+// Fibonacci Series 
+
+// let a = 0;
+// let b = 1;
+// let num = 10;
+
+// console.log(a);
+// console.log(b);
+
+// for (let i = 2; i <= num; i++) {
+//     let c = a + b;
+//     console.log(c);
+//     a = b;
+//     b = c;
+// }
+
+
+
+//  Finding Highest value in an array
+
+// let a = [10, 50, 29, 47, 90, 56];
+// let max = a[0];
+
+// for (let i = 1; i < a.length; i++) {
+//     if (a[i] > max) {
+//         max = a[i];
+//     }
+// }
+// console.log(max);
+
+
+
+//  find minimum value of an array
+
+// let a = [90, 70, 38, 48, 109, 22];
+// let min = a[0];
+
+
+// for (let i = 1; i < a.length; i++) {
+//     if (a[i] < min) {
+//         min = a[i];
+//     }
+// }
+// console.log(min);
+
+
+//  Removing duplicate values 
+
+let array = ["Venu", "jagan", "sudheer", "Venu", "jagan", 10, 38, 10, 60, 54, 60];
+
+let unique = ["Venu", "jagan"];
+
+for (let i = 0; i < array.length; i++) {
+    let exists = unique.includes(array[i]);
+    if (!exists) {
+        unique.push(array[i]);
+    }
 }
-
-
-let keys = Object.keys(cars);
-console.log(keys);
+console.log(unique);
 
 
 
-for (let i = 0; i < keys.length; i++) {
-    // console.log(keys[i]);
-    // console.log(cars[keys[i]]);
-    console.log(keys[i] + "=" + cars[keys[i]]);
-}
+// Extracting some part of an array
+
+// let array = ["Venu", "jagan", "sudheer", "Venu", "jagan", 10, 38, 10, 60, 54, 60];
+
+// let str_index = 1;
+// let end_index = 8;
+
+// let extract = [];
+
+// for (let i = 0; i < array.length; i++) {
+//     if (i >= str_index && i <= end_index) {
+//         extract.push(array[i]);
+//     }
+// }
+// console.log(extract);
+
+
+
+//  Find the count of each value appeared and find unique values alsoo
+
+// let array = ["Venu", "jagan", "sudheer", "Venu", "jagan", 10, 38, 10, 60, 54, 60];
+
+// let obj = {};
+
+// for (let i = 0; i < array.length; i++) {
+//     if (obj[array[i]]) {
+//         obj[array[i]] += 1;
+//     } else {
+//         obj[array[i]] = 1;
+//     }
+// }
+// console.log(obj);
+
+// console.log(Object.keys(obj));
+
+
+//  Print keys and values in an object
+
+// let fruits = {
+//     "Apple": "4",
+//     "Banana": "2",
+//     "Orange": "6",
+//     "Mango": "10"
+// }
+
+// console.log(Object.keys(fruits));
+
+// let keys = Object.keys(fruits);
+
+// for (let i = 0; i < keys.length; i++) {
+//     console.log(keys[i]);
+//     console.log(fruits[keys[i]]);
+//     console.log(keys[i] + "=" + fruits[keys[i]]);
+// }
+
+
+//  Find Palindrome
+
+// let word = "level";
+// let rev_word = "";
+
+// for (let i = word.length - 1; i >= 0; i--) {
+//     rev_word = rev_word + word[i];
+// }
+// if (word === rev_word) {
+//     console.log("The word is palindrome");
+// } else {
+//     console.log("The word is not a palindrome");
+// }
+
+
+
+//  Check if its prime numbe or not
+
+// let num = 11;
+// let isPrime = true;
+
+// for (let i = 2; i < num; i++) {
+//     // console.log(num[i]);
+//     if (num % i === 0) {
+//         isPrime = false;
+//         break;
+//     }
+// }
+
+// if (num <= 1) {
+//     console.log("The number is not prime");
+// } else if (isPrime) {
+//     console.log("The number is Prime");
+// } else {
+//     console.log("The number is not Prime");
+// }
+
+
+
+//  Reverse a string
+
+// let a = "Jagan";
+
+// let reverse = "";
+
+// for (let i = a.length - 1; i >= 0; i--) {
+//     reverse = reverse + a[i];
+// }
+// console.log(reverse);
+
+
+// let a = ["Venu", "Jagan", "Sudheer", "Bhargava"];
+
+// let sum = "";
+
+// for (let i = 0; i < a.length; i++) {
+//     sum = sum + a[i];
+// }
+// console.log(sum);
+
+
+
+// let a = [10, 203, 30, 50, 28, 49];
+
+// let sum = 0;
+
+// for (let i = 0; i < a.length; i++) {
+//     sum = sum + a[i];
+// }
+// console.log(sum);
+
+
+
 

@@ -81,3 +81,6 @@ for (let i = 0; i < c.length; i += 1) {
     div[i] = g[i] / h[i];
 }
 console.log(div);
+
+
+//  output -----> [ 5, 6.666666666666667, 7.5, 8, 50 ]

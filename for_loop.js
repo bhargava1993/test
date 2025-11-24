@@ -124,6 +124,7 @@
 let num = 18;
 let isPrime = true;
 
+
 for (i = 2; i < num; i += 1) {
     if (num % 2 == 0 || num % 3 == 0 || num % 4 == 0 || num % 5 == 0) {
         isPrime = false;
