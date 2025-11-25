@@ -174,8 +174,6 @@
 // indexOf  -- it will give you index number of an element else it will give you -1
 // inclueds -- it will give you true or false (if values is exists then true else false)
 
-
-
 //slice
 // slice() → copy
 // array.slice(start, end);
@@ -187,9 +185,6 @@
 // 1.Does NOT change the original array
 // 2.Returns a new array
 // 3.You choose the start and end (end not included)
-
-
-
 
 
 //splice
@@ -514,6 +509,51 @@
 // console.log(Array.isArray(names));
 
 
+// let array = ["a","b","c","d","e","f","g","h"];
+
+
+// let array = [1,2,3,4,5,6,7,8,9,10]
+
+
+
+// 4,5,6
+// console.log(array);
+
+// slice()
+// splice();
+
+// console.log(array.slice());
+// console.log(array.splice());
+
+// console.log(array.slice(3));
+// console.log(array.splice(3));
+
+// console.log(array.slice(3));
+
+// ["a","b","c","d","e","f","g","h"]
+
+// console.log(array.splice(2,4,"sudher","venu"));
+
+// p - parameters
+// p - purge
+// p - push
+
+// deep copy
+// show copy
+
+// ["c","d","e"];
+// ["a","b","f","g","h"];
+
+// console.log(array);
+
+// let array=["a","b","c","d","e","f","g","h"];
+// let result=[]
+
+// for(let i = array.length-1; i >= 0; i--){
+//     result.push(array[i]);
+// }
+
+// console.log(array.reverse());
 
 
 
