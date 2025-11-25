@@ -174,8 +174,67 @@
 // indexOf  -- it will give you index number of an element else it will give you -1
 // inclueds -- it will give you true or false (if values is exists then true else false)
 
+
+
 //slice
+// slice() → copy
+// array.slice(start, end);
+// start → index where the slice begins (included)
+// end → index where the slice stops (excluded)
+
+// Definition- copies part of an array and leaves the original untouched.
+
+// 1.Does NOT change the original array
+// 2.Returns a new array
+// 3.You choose the start and end (end not included)
+
+
+
+
+
 //splice
+// p = parametres
+// p= purge
+// p= push
+
+// splice() removes or adds items and changes the original array.
+
+// Syntax:
+// array.splice(start, deleteCount, item1, item2, ...);
+
+
+// start → index to begin
+
+// deleteCount → how many items to remove
+
+// item1, item2... → items to add (optional)
+
+// Examples:
+
+// Remove items
+// ----------------------
+// let numbers = [1, 2, 3, 4, 5];
+
+// numbers.splice(1, 2);
+
+// console.log(numbers);   // [1, 4, 5]
+
+// Add items
+// ----------------------
+// let colors = ["red", "blue"];
+
+// colors.splice(1, 0, "green");
+
+// console.log(colors);   // ["red", "green", "blue"]
+
+// Replace items
+// ----------------------
+// let cars = ["BMW", "Audi", "Ford"];
+
+// cars.splice(1, 1, "Tesla");
+
+// console.log(cars);     // ["BMW", "Tesla", "Ford"]
+
 
 // "Oliver", "Ava", "Elijah", "Sophia", "William", "Isabella"
 

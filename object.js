@@ -7,6 +7,8 @@
   
 // }
 
+// Object.keys(familyDetails)
+// output: ["myName","age","company name"];
 // village name
 
 
@@ -75,5 +77,48 @@
 // console.log(obj);
 
 // console.log(Object.keys(obj));
+
+
+// let newObj={
+//     "id":1,
+//     "name":"sudheer",
+//     "course name":"Btech"
+// }
+
+// console.log(newObj);
+// console.log(newObj.name);
+
+// console.log(newObj["id"]);
+// console.log(newObj["name"]);
+// console.log(newObj["course name"])
+
+
+
+// let keys=Object.keys(newObj);
+// console.log("step1-----",keys);
+// // output: [ 'id', 'name', 'course name' ]
+// console.log("step2 loop keys-----");
+
+// for(let i=0; i<keys.length; i++){
+
+//     console.log("index---",i);
+//     console.log("key----",keys[i]);
+//     console.log("value-------",newObj[keys[i]]);
+// }
+
+// let keys=Object.keys(newObj);
+
+// console.log(keys);
+
+// console.log(newObj["id"]);
+// console.log(newObj["name"]);
+// console.log(newObj["course"]);
+
+// for(let i=0;i<keys.length;i++){
+
+    // console.log(keys[i]);
+    // console.log(keys[i] + "=" +newObj[keys[i]]);
+// }
+
 
 
