@@ -555,6 +555,14 @@
 
 // console.log(array.reverse());
 
+// let array=["a","b","c","d",["bhargava","venu",["zaiba","btec",[1000,2000]]],"e","f","g","h"];
+
+// ["a","b","c","d","bhargava","venu","e","f","g","h"];
+
+// console.log(array.flat(Infinity));
+
+
+
 
 
 
