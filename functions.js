@@ -256,21 +256,21 @@ let cities = ["Hyd", "Bng", "Chennai", "Hyd", "Chennai", "Punjab", "Kolkatta"];
 
 // TO find the count of each value in an array using functions
 
-let fruits = ["Apple", "Banana", "Grapes", "Apple"]
+// let fruits = ["Apple", "Banana", "Grapes", "Apple"]
 
 
-const count = function count_of_values(array) {
-    let obj = {};
-    for (let i = 0; i < array.length; i++) {
-        if (obj[array[i]]) {
-            obj[array[i]] = obj[array[i]] + 1;
-        } else {
-            obj[array[i]] = 1;
-        }
-    }
-    console.log(obj);
-    return Object.keys(obj);
-}
+// const count = function count_of_values(array) {
+//     let obj = {};
+//     for (let i = 0; i < array.length; i++) {
+//         if (obj[array[i]]) {
+//             obj[array[i]] = obj[array[i]] + 1;
+//         } else {
+//             obj[array[i]] = 1;
+//         }
+//     }
+//     console.log(obj);
+//     return Object.keys(obj);
+// }
 // console.log(count_of_values(names));
 // console.log(count_of_values(cities));
 
@@ -279,5 +279,266 @@ const count = function count_of_values(array) {
 
 // const count = count_of_values(fruits);
 
-console.log(count(fruits));
-console.log(count(names));
+// console.log(count(fruits));
+// console.log(count(names));
+
+
+// let word = "Listen";
+// let sortWord = "Silent";
+
+// console.log(word.toLowerCase());
+// console.log(sortWord.toLowerCase());
+// console.log(word.split());
+// console.log(sortWord.split());
+
+// console.log(word.toLowerCase().split("").sort());
+// console.log(sortWord.toLowerCase().split("").sort());
+
+
+// Anagram Program ;
+
+// let firstWord = "Heart";
+// let secondWord = "Earth";
+
+
+// let first_word = firstWord.toLowerCase().split("").sort().join("");
+// let second_word = secondWord.toLowerCase().split("").sort().join("");
+
+// console.log(first_word);
+// console.log(second_word);
+
+// if (first_word === second_word) {
+//     console.log("It is a anagram");
+// } else {
+//     console.log("It is not a anagram");
+// }
+
+
+
+// // Anagram Program using Function;
+// function anagramCheck(word, sortWord) {
+
+//     let first_word = word.toLowerCase().split("").sort().join();
+//     let second_word = sortWord.toLowerCase().split("").sort().join();
+
+//     console.log(first_word);
+//     console.log(second_word);
+
+//     if (first_word === second_word) {
+//         console.log("It is a anagram");
+//     } else {
+//         console.log("It is not a anagram");
+//     }
+//     return first_word === second_word;
+// }
+// console.log(anagramCheck("Listen", "Silent"));
+
+
+
+//  Find the Even numbers of an array
+
+// let array_1 = [12, 24, 35, 23, 45, 34, 57, 64, 68, 74];
+
+// function even(array) {
+//     let even = [];
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i] % 2 === 0) {
+//             even.push(array[i]);
+//         }
+//     }
+//     return even;
+// }
+// console.log(even(array_1));
+
+// let even = [];
+// for (let i = 0; i < array_1.length; i++) {
+//     // console.log(array_1[i])
+//     if (array_1[i] % 2 === 0) {
+//         even.push(array_1[i]);
+//     }
+// }
+// console.log(even);
+
+
+
+//  To find the Odd numbers in an array
+
+// let array_1 = [12, 24, 35, 23, 45, 34, 57, 64, 68, 74];
+// function odd(array) {
+//     let odd = [];
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i] % 2 !== 0) {
+//             odd.push(array[i]);
+//         }
+//     }
+//     return odd;
+// }
+// console.log(odd(array_1));
+
+
+
+// To find the palindrome using the functions
+
+// function palindrome(string) {
+//     revString = "";
+//     for (let i = string.length - 1; i >= 0; i--) {
+//         revString = revString + string[i];
+
+//     }
+//     return (string === revString);
+// }
+// console.log(palindrome("level"));
+// console.log(palindrome("Venu"));
+// console.log(palindrome("racecar"));
+
+
+
+// To find the palindrome number using functions
+
+// function palindrome(numbers) {
+//     revNum = "";
+//     let num = JSON.stringify(numbers);
+//     for (let i = num.length - 1; i >= 0; i--) {
+//         revNum = revNum + num[i];
+
+//     }
+//     return (num === revNum);
+// }
+// console.log(palindrome(1221));
+// console.log(palindrome(1241));
+// console.log(palindrome(2002));
+
+
+//  Fibonacci series using functions
+
+
+// function fibonacci(num) {
+//     let a = -1;
+//     let b = 1;
+//     for (let i = 0; i <= num; i++) {
+//         let c = a + b;
+//     if (c <= 20) {              // When we want to print this number below ,then we will use this conditiion otherwise not.
+//             console.log(c);
+//             a = b;
+//             b = c;
+//         }
+//     }
+//     return true;
+// }
+// // console.log(fibonacci(10));
+// console.log(fibonacci(20));
+
+
+
+
+//  Prime Number Program using functions
+
+// function prime(num) {
+//     isPrime = true;
+//     for (let i = 2; i < num; i++) {
+//         if (num % 2 === 0) {
+//             isPrime = false;
+//             break;
+//         }
+//     }
+//     if (num <= 1) {
+//         console.log("It is not a prime number");
+//     } else if (isPrime) {
+//         console.log("It is a prime number");
+//     } else {
+//         console.log("It is not a prime number");
+//     }
+// }
+
+// console.log(prime(90));
+// console.log(prime(11));
+// console.log(prime(29));
+// console.log(prime(57));
+
+
+//  Count the how many vowels in the word
+
+// function count(string) {
+//     let vowels = "aeiouAEIOU";
+//     let counts = 0;
+//     for (let i = 0; i < string.length; i++) {
+//         if (vowels.includes(string[i])) {
+//             counts = counts + 1;
+//         }
+//     }
+//     return counts;
+// }
+// console.log(count("Venukumar,Jagan ,Viraatkohli"));
+// console.log(count("Virat kohl and MS Dhoni and Rohith Sharma and"));
+
+// let word = "Jagan,Anji,sudheer";
+// let vowels = "aeiouAEIOU";
+// // let word = "Jagan,Anji";
+// let count = 0
+
+// for (let i = 0; i < word.length; i++) {
+//     if (vowels.includes(word[i])) {
+//         count = count + 1;
+//     }
+// }
+// console.log(count);
+
+
+
+// Reverse an array using functions
+
+// let a = ["Venu", "Jagan", "Sudheer", "Anji", "Ganesh"];
+// let b = ["Hyd", "Bng", "Chennai", "Vizag"];
+
+// let reverse_array = [];
+
+// function reverse(array) {
+//     for (let i = array.length - 1; i >= 0; i--) {
+//         reverse_array.push(array[i]);
+
+//     }
+//     return reverse_array;
+// }
+// // console.log(reverse(a));
+
+// console.log(reverse(b));
+
+// console.log(reverse(a));
+
+
+
+// Sum of array Elements
+
+// let a = [10, 20, 30, 40, 50, 60];
+
+// let b = [39, 20, 42, 81];
+
+// let sum = 0;
+
+// function add(array) {
+//     for (let i = 0; i < array.length; i++) {
+//         sum = sum + array[i];
+//     }
+//     return sum;
+// }
+// console.log(add(a));
+// console.log(add(b));
+
+
+
+//  To extract some part of an array without using array methods
+
+// let color = ["White", "Red", "Purple", "Black", "Yellow", "Green", "Blue", "Pink", "Orange"];
+// let city = ["Hyd", "Bng", "Chennai", "Pune", "Punjab", "Vizag", "Delhi"];
+
+// function extract(array) {
+//     let extract_array = [];
+//     for (let i = 0; i < array.length; i++) {
+//         if ((i > 1) && (i <= 5)) {
+//             extract_array.push(array[i]);
+//         }
+//     }
+//     return extract_array;
+// }
+// console.log(extract(color));
+// console.log(extract(city));
