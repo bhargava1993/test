@@ -86,19 +86,19 @@
 // console.log(10%2);
 
 // for(let i=1; i < 10;i++){
-    
+
 //    if(i%2 === 2){
 //     // console.log(i);
 //    }
 //    else{
 //     console.log(i);
 //    }
-    
+
 // }
 
 // let array = ["bhargava", "venu", "sudheer", "zaiba"];
-                // 0           1       2           3
-                    // 0       0+1         1+1    2+1
+// 0           1       2           3
+// 0       0+1         1+1    2+1
 // console.log(array[0]);
 // console.log(array[1]);
 // console.log(array[2]);
@@ -158,7 +158,7 @@
 //     console.log(studentNames[i]);
 // }
 
- 
+
 // console.log(studentNames.length);
 
 // for(let i=0;i<studentNames.length;i++){
@@ -436,7 +436,7 @@
 // let result;
 
 // for(let i = 1; i<=10 ;i++){
-    
+
 //     // console.log(i);
 //     // result = number * i;
 //     // console.log(result);
@@ -471,7 +471,7 @@
 // let uniqueArray=[]
 
 // for(let i=0; i<names.length; i++){
-  
+
 //     let exsits = uniqueArray.includes(names[i]);
 
 //     if(!exsits){
@@ -495,7 +495,7 @@
 //         // console.log(i);
 //         newArray.push(names[i]);
 //     }
-    
+
 // }
 
 // console.log(newArray);
@@ -560,6 +560,163 @@
 // ["a","b","c","d","bhargava","venu","e","f","g","h"];
 
 // console.log(array.flat(Infinity));
+
+
+
+
+// let array = [10, 20, 30, 60, 40, 50];
+
+
+// factoril,
+// sum,
+// unqiue,
+// unique,
+// revers,
+
+// prime,
+
+// scope
+
+// polindrome
+
+// Listen – Silent
+
+// let firstWord = "Listen";
+// let secWord = "Silent";
+
+// console.log(firstWord.toLowerCase());
+// console.log(secWord.toLowerCase());
+// 67-92
+
+// 96-122
+
+// function checkAnagram(firstWord, secWord){
+
+// let sortWord = firstWord.toLowerCase().split("").sort();
+// let res=secWord.toLowerCase().split("").sort();
+// let reversString="";
+// for(let i=0;i<sortWord.length;i++){
+//     // console.log(i);
+// reversString=reversString+sortWord[i];
+// }
+
+
+// let newSec="";
+// for(let i=0;i<res.length;i++){
+// newSec=newSec+res[i];
+// }
+
+
+
+//     return newSec === reversString;
+
+// }
+
+// console.log(checkAnagram(firstWord, secWord));
+
+
+
+
+
+// let array=["Banana", "Orange", "Apple", "Mango"];;
+// console.log(array.sort());
+
+
+
+// 1221
+
+// let num=1221;
+
+// console.log(num.length);
+
+// num = JSON.stringify(num);
+
+// console.log(num);
+// console.log(typeof num);
+// console.log(num.length);
+// let reversString="";
+// for(let i = num.length-1; i >=0;i--){
+//     reversString = reversString + num[i];
+
+// }
+
+//  console.log(reversString === num);
+
+
+let sentence = "With the civic introduction of the new Racecar toSorted level method in JavaScript there's now a Aibohphobia straightforward way";
+
+// 1. find polindrome
+// 2. number of polindrome
+// 3. longest polindrome
+
+let sentencArr= sentence.split(" ");
+// console.log(sentencArr);
+
+let polindromeObj={};
+
+for(let i=0; i < sentencArr.length;i++){
+    // console.log(checkPolindromeOrNot(sentencArr[i]));
+
+    if(checkPolindromeOrNot(sentencArr[i])){
+        polindromeObj[sentencArr[i]] = sentencArr[i].length;
+    }
+}
+// console.log(polindromeObj);
+function checkPolindromeOrNot(polindrome){
+
+    let reversString = "";
+    for (let i = polindrome.length - 1; i >= 0; i--) {
+        reversString = reversString + polindrome[i];
+    }
+
+    return reversString.toLowerCase() === polindrome.toLowerCase();
+}
+
+
+
+
+
+
+
+
+
+
+
+// sentence = sentence.split(" ");
+
+
+// let polindromeArr={};
+
+
+// for(let i =0 ; i < sentence.length;i++){
+
+//     if(checkPolindromeOrNot(sentence[i])){
+       
+//         polindromeArr[sentence[i]] = sentence[i].length
+//     }
+// }
+// console.log("polindromeArr---------",polindromeArr);
+
+
+// function checkPolindromeOrNot(polindrome) {
+   
+
+//     let reversString = "";
+//     for (let i = polindrome.length - 1; i >= 0; i--) {
+//         reversString = reversString + polindrome[i];
+//     }
+
+ 
+//     return reversString.toLowerCase() === polindrome.toLowerCase();
+// }
+
+
+
+
+
+
+
+
 
 
 
