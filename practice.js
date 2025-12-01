@@ -367,12 +367,12 @@
 //     }
 // }
 
-// console.log(obj);              // To count how many times appear a value  
-// console.log(Object.keys(obj));       // It shows the keys and keys are unique values 
+// console.log(obj);              // To count how many times appear a value
+// console.log(Object.keys(obj));       // It shows the keys and keys are unique values
 
 
 
-// 
+//
 
 //  To add adding a value in object
 
@@ -471,7 +471,7 @@
 // console.log(count);
 
 
-// Fibonacci Series 
+// Fibonacci Series
 
 // let a = 0;
 // let b = 1;
@@ -517,19 +517,19 @@
 // console.log(min);
 
 
-//  Removing duplicate values 
+// //  Removing duplicate values
 
-let array = ["Venu", "jagan", "sudheer", "Venu", "jagan", 10, 38, 10, 60, 54, 60];
+// let array = ["Venu", "jagan", "sudheer", "Venu", "jagan", 10, 38, 10, 60, 54, 60];
 
-let unique = ["Venu", "jagan"];
+// let unique = ["Venu", "jagan"];
 
-for (let i = 0; i < array.length; i++) {
-    let exists = unique.includes(array[i]);
-    if (!exists) {
-        unique.push(array[i]);
-    }
-}
-console.log(unique);
+// for (let i = 0; i < array.length; i++) {
+//     let exists = unique.includes(array[i]);
+//     if (!exists) {
+//         unique.push(array[i]);
+//     }
+// }
+// console.log(unique);
 
 
 

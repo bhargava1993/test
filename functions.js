@@ -542,3 +542,65 @@ let cities = ["Hyd", "Bng", "Chennai", "Hyd", "Chennai", "Punjab", "Kolkatta"];
 // }
 // console.log(extract(color));
 // console.log(extract(city));
+
+
+
+
+// let num = 153;
+// let temp = num;
+// let sum = 0;
+
+// let digits = num.toString.length;
+
+// for (let i = 0; i < digits; i++) {
+//     let digit = temp % 10;
+//     sum = sum + digit ** digits;
+//     temp = Math.floor(temp / 10);
+
+// }
+// if (sum === temp) {  
+//     console.log("It is an armstrong number");
+// } else {
+//     console.log("It is not an armstrong number");
+// }
+
+
+
+let num = 153;
+let temp = num;
+let sum = 0;
+
+let digits = num.toString().length;
+
+for (let i = 0; i < digits; i++) {
+    let digit = temp % 10;
+    sum = sum + digit ** digits;
+    temp = Math.floor(temp / 10);
+}
+if (sum === num) {
+    console.log(num, "is an armstrong number");
+} else {
+    console.log(num, "is not an armstrong number");
+}
+
+
+function armstrong(num) {
+    let temp = num;
+    let sum = 0;
+
+    let digits = num.toString().length;
+
+    for (let i = 0; i < digits; i++) {
+        let digit = temp % 10;
+        sum = sum + digit ** digits;
+        temp = Math.floor(temp / 10);
+    }
+
+    if (sum === num) {
+        console.log(num, "is a armstrong number");
+    } else {
+        console.log(num, "is not a armstrong number");
+    }
+    return (sum === num);
+}
+console.log(armstrong(1634));

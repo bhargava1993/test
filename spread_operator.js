@@ -1,6 +1,6 @@
-// Spread Operator 
+// Spread Operator
 //  It is denoted with [... varaible_name]
-//  It will work only arrays and objects 
+//  It will work only arrays and objects
 //  It will not work in variables
 //  It is used as deep copy.
 //  It is used to add multiple arrays also.
@@ -12,7 +12,7 @@
 
 //  firstly copy the variable , when we trying to modify the copied varible and original variable also modified (or)changed.
 //  It will changed (or) ffect to the original variable this should not happening.
-//  This should not happening 
+//  This should not happening
 //  To avoid this problem to introduced in spread operator
 
 // let array = ["Venu", "Sudheer", "Bhargav", "Jagan", "Anji"];
@@ -117,25 +117,25 @@
 // console.log(array);
 
 
-let obj = {
-    "Name": "Venu",
-    "Age": 22,
-    "details": {
-        "job": "Mernstack developer",
-        "Salary": 50000
-    }
-}
+// let obj = {
+//     "Name": "Venu",
+//     "Age": 22,
+//     "details": {
+//         "job": "Mernstack developer",
+//         "Salary": 50000
+//     }
+// }
 
+// // console.log(obj);
+
+// // let a = { ...obj };
+
+// let a = (JSON.parse(JSON.stringify({ ...obj })));
+// // console.log(a);
+
+// // obj.marks = 650;
+// // console.log(obj);
+
+// a.details.maths_marks = 60;
+// console.log(a);               // It will change the original array also this should not happening ,so we use json.stringify and json.parse
 // console.log(obj);
-
-// let a = { ...obj };
-
-let a = (JSON.parse(JSON.stringify({ ...obj })));
-// console.log(a);
-
-// obj.marks = 650;
-// console.log(obj);
-
-a.details.maths_marks = 60;
-console.log(a);               // It will change the original array also this should not happening ,so we use json.stringify and json.parse
-console.log(obj);
