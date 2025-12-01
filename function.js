@@ -215,20 +215,49 @@ let array=["a","b","c","d",["bhargava","venu",["zaiba","btec",[1000,2000,["mca",
 
 // console.log(array.flat(Infinity));
 
-let i=0;
-function printArrayValuesFn(inputArray){
-    console.log("inputArray--------",inputArray[i], typeof inputArray[i], Array.isArray(inputArray[i]));
-    // console.log(i);
-    if(Array.isArray(inputArray[i])){
-        printArrayValuesFn(inputArray);
+let i = 0;
+let result = [];
+
+function printArrayValuesFn(inputArray) {
+
+    // stop if index out of bounds
+    if (i >= inputArray.length) return;
+
+    let value = inputArray[i];
+
+    console.log(
+        "inputArray--------",
+        value,
+        typeof value,
+        Array.isArray(value)
+    );
+
+    // If it's an array → push it AND recurse into it
+    if (Array.isArray(value)) {
+
+        // include the array itself
+        result.push(value);
+
+        // walk inside it — preserve outer index
+        let oldIndex = i;
+        i = 0;
+        printArrayValuesFn(value);
+        i = oldIndex;
+
+    } else {
+        // normal value
+        result.push(value);
     }
+
     i++;
 
-    if(i<=inputArray.length){
+    // continue walking the same array
+    if (i < inputArray.length) {
         printArrayValuesFn(inputArray);
-        return;
     }
-    
 }
 
-printArrayValuesFn(array)
+
+
+printArrayValuesFn(array);
+console.log("result:", result);
