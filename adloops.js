@@ -130,11 +130,11 @@ let products = [
 
 // console.log(result);
 
-let result = products.map((ele, index) => {
+// let result = products.map((ele, index) => {
 
-    ele["discount"] = 10
-    return ele;
-})
+//     ele["discount"] = 10
+//     return ele;
+// })
 
-console.log(result);
+// console.log(result);
 
