@@ -1,4 +1,4 @@
-// for...of 
+// for...of
 // It is one of the loooping method and it loop an array
 
 // let array = [1, 2, 3, 4, 6, 7, 8, 9];
@@ -16,14 +16,16 @@
 
 
 
-// for...in 
+// for...in
 // It is one of the loopin method and it loop an object
-let obj = {
-    Name: "Venu",
-    Course: "Fullstack",
-    age: 21
 
-}
+
+// let obj = {
+//     Name: "Venu",
+//     Course: "Fullstack",
+//     age: 21
+
+// }
 // console.log(obj);
 
 // let keys = Object.keys(obj);
@@ -38,8 +40,14 @@ let obj = {
 //     console.log(key, "--", obj[key]);
 // }
 
-let keys = Object.keys(obj);
 
-for (let keys in obj) {
-    console.log(keys + "---" + obj[keys]);
-}
+// using for...in
+
+// let keys = Object.keys(obj);
+
+// for (let keys in obj) {
+//     console.log(keys + "---" + obj[keys]);
+// }
+
+
+
