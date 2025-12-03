@@ -84,41 +84,41 @@
 
 
 
-let products = [
-    {
-        "id": 1,
-        "name": "Aurora Desk Lamp",
-        "price": 49.99,
-        "inStock": true
-    },
-    {
-        "id": 2,
-        "name": "Cloudweave Notebook",
-        "price": 12.5,
-        "inStock": false
-    },
-    {
-        "id": 3,
-        "name": "Copperleaf Pen",
-        "price": 7.99,
-        "inStock": true
-    },
-    {
-        "id": 4,
-        "name": "Nimbus Headphones",
-        "price": 89.0,
-        "inStock": true
-    },
-    {
-        "id": 5,
-        "name": "Starlace Backpack",
-        "price": 64.5,
-        "inStock": false
-    }
-]
+// let products = [
+//     {
+//         "id": 1,
+//         "name": "Aurora Desk Lamp",
+//         "price": 49.99,
+//         "inStock": true
+//     },
+//     {
+//         "id": 2,
+//         "name": "Cloudweave Notebook",
+//         "price": 12.5,
+//         "inStock": false
+//     },
+//     {
+//         "id": 3,
+//         "name": "Copperleaf Pen",
+//         "price": 7.99,
+//         "inStock": true
+//     },
+//     {
+//         "id": 4,
+//         "name": "Nimbus Headphones",
+//         "price": 89.0,
+//         "inStock": true
+//     },
+//     {
+//         "id": 5,
+//         "name": "Starlace Backpack",
+//         "price": 64.5,
+//         "inStock": false
+//     }
+// ]
 
 // let result = products.filter((ele, index) => {
-    
+
 //     if(ele["inStock"] === false){
 //         return ele;
 //     }
@@ -138,3 +138,34 @@ let products = [
 
 // console.log(result);
 
+
+// let array = [2, 4, 7, 9];
+// let array2 = [20, 40, 70, 90];
+
+// [{2:90},{4:70},{7:40},{9:90}]
+
+// array2.length;
+// let array2Length = array2.length - 1;
+
+// let result = array.map((ele, index) => {
+//     let obj = {};
+
+//     // console.log(ele, array2Length - index, array2[array2Length - index]);
+
+//     // obj[ele]=array2[index];
+
+//     // obj[array2[index]]=ele;
+
+//     let reverseIndex = array2Length - index;
+//     obj[ele] = array2[reverseIndex];
+//     // console.log(obj);
+
+//     return obj;
+
+// });
+// console.log(result);
+// // output: [{2:20},{4:40},{7:70}]
+
+// // output: [{20:2},{40:4},{70:7}]
+
+// // output: [{2:90},{4:70},{7:40},{9:90}]

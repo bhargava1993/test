@@ -131,5 +131,33 @@ console.log(result);
 
 
 
-// for(let i =0; i < array.length;i++){
-// }
+// let array = [2, 4, 7, 9];
+// let array2 = [20, 40, 70, 90];
+
+// [{2:90},{4:70},{7:40},{9:90}]
+
+// array2.length;
+// let array2Length = array2.length - 1;
+
+// let result = array.map((ele, index) => {
+//     let obj = {};
+
+//     // console.log(ele, array2Length - index, array2[array2Length - index]);
+
+//     // obj[ele]=array2[index];
+
+//     // obj[array2[index]]=ele;
+
+//     let reverseIndex = array2Length - index;
+//     obj[ele] = array2[reverseIndex];
+//     // console.log(obj);
+
+//     return obj;
+
+// });
+// console.log(result);
+// // output: [{2:20},{4:40},{7:70}]
+
+// // output: [{20:2},{40:4},{70:7}]
+
+// // output: [{2:90},{4:70},{7:40},{9:90}]
