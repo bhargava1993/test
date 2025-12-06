@@ -491,5 +491,3 @@ async function check() {
 check().then((result) => {
     console.log(result);
 });
-
-

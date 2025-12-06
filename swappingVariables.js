@@ -45,10 +45,16 @@ let array = [1, 2, 6, 9, 4, 8, 10], temp, temp2, temp3, temp4;
 
 
 
-temp = [...array][4];
-temp2 = [...array][2];
-temp3 = [...array][5];
-temp4 = [...array][3]
+// temp = [...array][4];
+// temp2 = [...array][2];
+// temp3 = [...array][5];
+// temp4 = [...array][3];
+
+temp = array[4];
+temp2 = array[2];
+temp3 = array[5];
+temp4 = array[3];
+
 array[2] = temp;
 array[3] = temp2;
 array[4] = temp3;
