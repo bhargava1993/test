@@ -662,4 +662,169 @@
 
 
 
+// for (let i = 0; i <= 100; i++) {
+//     console.log(i);
+// }
 
+// for (let i = 10; i >= 0; i--) {
+//     console.log(i)
+// }
+
+
+let a = ["Venu", "sudher", "Jagan"];
+
+// for (let i = 0; i < a.length; i++) {
+//     console.log(a[i]);
+// }
+// for (let i = a.length - 1; i >= 0; i--) {
+//     console.log(a[i]);
+// }
+
+// let array = [];
+
+// for (let i = 0; i < a.length; i++) {
+//     array.push(a[i]);
+//     // console.log(a[i]);
+// }
+// console.log(array);
+
+// for (let i = a.length - 1; i >= 0; i--) {
+//     array.push(a[i]);
+//     // console.log(a[i]);
+// }
+// console.log(array);
+
+
+// let fruits = ["Apple", "Banana", "Grapes", "pomogranite", "Orange", "watermelon", "Guava"];
+// let extract = [];
+
+// for (let i = 0; i < fruits.length; i++) {
+//     str_index = fruits[1];
+//     end_index = fruits[5];
+//     if (fruits[i] >= str_index && fruits[i] <= end_index) {
+//         extract.push(fruits[i]);
+//     }
+// }
+
+
+// for (let i = 0; i < fruits.length; i++) {
+//     if (i >= 2 && i <= 5) {
+//         extract.push(fruits[i])
+//     }
+// }
+// console.log(extract);
+
+// for (let i = fruits.length - 1; i >= 0; i--) {
+//     if (i >= 2 && i <= 5) {
+//         extract.push(fruits[i])
+//     }
+// }
+// console.log(extract);
+
+// let array = [10, 20, 30, 40, 50, 60];
+// let sum = 0;
+
+// for (let i = 0; i < array.length; i++) {
+//     sum = sum + array[i];
+// }
+
+// console.log(sum);
+
+// for (let i = 0; i <= 20; i++) {
+//     if (i % 2 !== 0) {
+//         console.log(i);
+//     }
+// }
+
+
+// let array = [10, 20, 30, 40, 50, 60];
+// let array1 = [20, 30, 40, 50, 60, 70];
+// let sum = [];
+
+// for (let i = 0; i < array.length; i++) {
+//     sum[i] = array[i] + array1[i];
+// }
+// console.log(sum);
+
+// let num = 5;
+// let fact = 1;
+// for (let i = 1; i <= num; i++) {
+//     fact = fact * i;
+
+// }
+// console.log(fact);
+// let num = 4
+// let table = 1;
+// for (let i = 1; i <= 10; i++) {
+//     table = num + "*" + i + "=" + num * i;
+//     console.log(table);
+// }
+// console.log(table);
+
+
+// let num = 121;
+// let reverse = "";
+
+// number = num.toString();
+// console.log(number);
+// console.log(typeof number);
+
+// for (let i = number.length - 1; i >= 0; i--) {
+//     reverse = reverse + number[i];
+// }
+// console.log(reverse);
+// if (reverse === number) {
+//     console.log("It is a palindrome");
+// } else {
+//     console.log("It is not a palindrome");
+// }
+
+
+// let num = 49;
+// let isPrime = true;
+
+// for (let i = 2; i < num; i++) {
+//     if (num % i === 0) {
+//         isPrime = false;
+//         break;
+//     }
+// }
+// if (num <= 1) {
+//     console.log("It is not a Prime number");
+// } else if (isPrime) {
+//     console.log("It is a prime number");
+// } else {
+//     console.log("It is not a prime number");
+// }
+
+
+// let fruits = ["Apple", "Banana", "Grapes", "pomogranite", "Orange", "watermelon", "Guava"];
+
+// for (let i = 0; i < fruits.length; i++) {
+//     if (fruits[i] === "Banana") {
+//         console.log("It is availabe in fruits ");
+//         console.log(i);
+
+//     }
+// }
+
+// for (let i = 0; i < fruits.length; i++) {
+//     if (fruits[i] === "Banana") {
+//         console.log("It is availabe in fruits ");
+//         fruits[i] = "Sapota";
+//         // console.log(i);
+
+//     }
+// }
+// console.log(fruits);
+
+let fruits = ["Apple", "Banana", "Grapes", "Guava", "Grapes", "Banana", "Guava"];
+let unique = [];
+
+for (let i = 0; i < fruits.length; i++) {
+    let exists = unique.includes(fruits[i]);
+    if (!exists) {
+        unique.push(fruits[i]);
+    }
+}
+console.log(unique);
