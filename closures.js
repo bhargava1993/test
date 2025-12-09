@@ -90,8 +90,11 @@ function createBankAccount() {
 
 for(var i=0; i<5;i++){
 
+   (function(x){
     setTimeout(()=>{
-        console.log(i);
+        console.log(x);
     },1000)
+   })(i)
+   
 
 }
