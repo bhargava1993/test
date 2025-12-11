@@ -671,7 +671,7 @@
 // }
 
 
-let a = ["Venu", "sudher", "Jagan"];
+// let a = ["Venu", "sudher", "Jagan"];
 
 // for (let i = 0; i < a.length; i++) {
 //     console.log(a[i]);
@@ -818,13 +818,278 @@ let a = ["Venu", "sudher", "Jagan"];
 // }
 // console.log(fruits);
 
-let fruits = ["Apple", "Banana", "Grapes", "Guava", "Grapes", "Banana", "Guava"];
-let unique = [];
+// let fruits = ["Apple", "Banana", "Grapes", "Guava", "Grapes", "Banana", "Guava"];
+// let unique = [];
 
-for (let i = 0; i < fruits.length; i++) {
-    let exists = unique.includes(fruits[i]);
-    if (!exists) {
-        unique.push(fruits[i]);
-    }
-}
-console.log(unique);
+// for (let i = 0; i < fruits.length; i++) {
+//     let exists = unique.includes(fruits[i]);
+//     if (!exists) {
+//         unique.push(fruits[i]);
+//     }
+// }
+// console.log(unique);
+
+// let unique = [];
+// for (let i = 0; i < fruits.length; i++) {
+//     let exist = unique.includes(fruits[i]);
+//     if (!exist) {
+//         unique.push(fruits[i]);
+//     }
+// }
+// console.log(unique);
+
+
+// let obj = {};
+// for (let i = 0; i < fruits.length; i++) {
+//     if (obj[fruits[i]]) {
+//         obj[fruits[i]] = obj[fruits[i]] + 1;
+//     } else {
+//         obj[fruits[i]] = 1;
+//     }
+// }
+// console.log(obj);
+// console.log(Object.keys(obj));
+
+
+
+// let cars = {
+//     "Audi": "White",
+//     "BMW": "Black",
+//     "Toyota": "White",
+//     "Kia": "Brown"
+// }
+// let keys = Object.keys(cars);
+// console.log(keys);
+// console.log(cars[Object.keys(cars)]);
+
+// for (let i = 0; i < keys.length; i++) {
+//     // console.log(keys[i]);
+//     // console.log(cars[keys[i]]);
+//     console.log(keys[i] + "=" + cars[keys[i]]);
+// }
+
+
+// cars["Wagnor"] = "Silver";
+// console.log(cars);
+// cars["Suzuki"] = "Silver";
+// console.log(cars);
+
+// delete cars["Suzuki"];
+// console.log(cars);
+// delete cars["Kia"];
+// console.log(cars);
+
+
+// console.log(cars);
+
+// console.log(Object.keys(cars));
+
+// let keys = Object.keys(cars);
+
+// for (let i = 0; i < keys.length; i++) {
+//     // console.log(keys[i]);
+//     // console.log(cars[keys[i]]);
+
+//     console.log(keys[i] + "=" + cars[keys[i]]);
+// }
+
+
+
+// let city = ["Hyd", "Bng", "Chennai", "Vizag", "Pune", "Ahmadabad", "Kolkatta"];
+// let extract = [];
+// let str_index = 1;
+// let end_inex = 5;
+
+// for (let i = 0; i < city.length; i++) {
+//     if (i >= str_index && i < end_inex) {
+//         extract.push(city[i]);
+//     }
+// }
+// console.log(extract);
+
+
+
+// let city = ["Hyd", "Bng", "Chennai", "Vizag", "Pune", "Ahmadabad", "Kolkatta"];
+
+// for (let i = 0; i < city.length; i++) {
+//     if (city[i] === "Bng") {
+//         console.log("index number--------", i);
+//         console.log("The value is exist");
+//         city[i] = "Delhi";
+//     }
+// }
+// console.log(city);
+
+// console.log(city.indexOf("Vizag"));
+// console.log(city.indexOf("Pune"));
+// console.log(city.indexOf("delhi"));
+
+// console.log(city.includes("Pune"));
+// console.log(city.includes("Delhi"));
+
+// console.log(city.reverse());
+
+// let city = ["Hyd", "Bng", "Chennai", "Vizag", "Pune", "Ahmadabad", "Kolkatta"];
+
+// console.log(city.length);
+
+// city.sort()
+// console.log(city);
+
+// console.log(city.slice(2, 3));
+// console.log(city.slice(1, 6));
+// console.log(city.slice(4));
+
+
+// console.log(city.splice(1, 3));
+// console.log(city.splice(3));
+
+// console.log(city.splice(1, 2, "Venu", "Jagan", "Sudheer"));
+// console.log(city);
+// city.splice(3, 0, "Viratkohli");
+// console.log(city);
+
+
+// let num = 1221;
+// let number = num.toString()
+// console.log(typeof number)
+
+// let reverse = ""
+// for (let i = number.length - 1; i >= 0; i--) {
+//     console.log(number[i]);
+//     reverse = reverse + number[i];
+// }
+// console.log(reverse);
+
+// if (number === reverse) {
+//     console.log("It is a palindrome ");
+// } else {
+//     console.log("It is not a palindrome");
+// }
+
+
+
+// let names = "Virat kohli and King Venukumar";
+// let count = 0;
+
+// let vowels = "aeiou";
+// let lowerNames = names.toLowerCase();
+// console.log(lowerNames);
+
+// for (let i = 0; i < lowerNames.length; i++) {
+//     // if (vowels.includes(lowerNames[i])) {
+//     //     count = count + 1;
+//     // }
+
+//     let includes = vowels.includes(lowerNames[i]);
+//     if (includes) {
+//         count = count + 1;
+//     }
+
+
+
+// }
+// console.log(count);
+
+
+// let arr = [10, 304, 29, 502, 82];
+// let max = arr[0];
+
+
+// for (let i = 0; i < arr.length; i += 1) {
+//     if (max < arr[i]) {
+//         max = arr[i]
+//     }
+
+// }
+// console.log(max);
+
+// let min = arr[0];
+// for (let i = 0; i < arr.length; i++) {
+//     if (min > arr[i]) {
+//         min = arr[i];
+//     }
+// }
+// console.log(min);
+
+
+// let a = -1;
+// let b = 1;
+// let num = 10;
+
+// for (let i = 0; i < num; i++) {
+//     let c = a + b;
+//     if (c < num) {
+//         console.log(c);
+//         a = b;
+//         b = c;
+
+//     }
+//     // console.log(c);
+//     // a = b;
+//     // b = c;
+// }
+
+
+
+
+// let word = "RaceCar";
+// let word2 = "Carrace";
+
+
+// sortedWord1 = word.toLowerCase().split("").sort().join("");
+// sortedWord2 = word2.toLowerCase().split("").sort().join("");
+
+
+// if (sortedWord1 === sortedWord2) {
+//     console.log("It is a anagram word ");
+// } else {
+//     console.log("It is not a anagram word");
+// }
+
+// // console.log(sortedWord1);
+// // console.log(sortedWord2);
+
+
+// let num = 153;
+// let temp = num;
+// let sum = 0;
+// let digits = num.toString()
+// // console.log(digits);
+
+// for (let i = 0; i < digits.length; i++) {
+//     let digit = temp % 10;
+//     sum = sum + digit ** digits;
+//     temp = Math.floor(temp / 10);
+// }
+// // console.log(sum);
+// // console.log(num);
+
+// if (sum === temp) {
+//     console.log("It is an armstrong number")
+// } else {
+//     console.log("It is not an armstrong number");
+// }
+
+
+// let number = 153;
+
+// let temp = number;
+
+// let digits = temp.toString().length;
+
+// let sum = 0;
+
+// for (let i = 0; i < digits; i++) {
+//     let digit = temp % 10;     // to identify the last digit
+//     sum = sum + digit ** digits;        // to square the elements length
+//     temp = Math.floor(temp / 10);                   // to remove last element
+// }
+
+// console.log(sum);
+
+// if (sum === number) {
+//     console.log("It is an armstrong number ");
+// } else {
+//     console.log("It is not an armstrog number");
+// }
