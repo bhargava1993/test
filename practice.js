@@ -1093,3 +1093,574 @@
 // } else {
 //     console.log("It is not an armstrog number");
 // }
+
+
+
+// function checkPrime(num) {
+//     let isPrime = true
+//     for (let i = 2; i < num; i++) {
+//         if (num % i === 0) {
+//             isPrime = false;
+//             break;
+
+//         }
+
+//     }
+//     if (num <= 1) {
+//         console.log("It is not a pime number");
+//     } else if (isPrime) {
+//         console.log("It is a prime number");
+//     } else {
+//         console.log("It is not a prime number");
+//     }
+//     return num;
+
+// }
+// console.log(checkPrime(12));
+
+
+// function checkPrime(num) {
+//     let isPrime = true;
+//     for (let i = 2; i < num; i++) {
+//         if (num % i === 0) {
+//             isPrime = false;
+//             break;
+//         }
+//     }
+//     if (num < 2) {
+//         console.log("It is not a prime number");
+//     } else if (isPrime) {
+//         console.log("It is a prime number")
+//     } else {
+//         console.log("It is not a prime number")
+//     }
+// }
+// checkPrime(11);
+
+
+
+// let str = "Venukumar";
+// function reverse(str) {
+//     let reverseString = "";
+//     for (let i = str.length - 1; i >= 0; i--) {
+//         reverseString = reverseString + str[i];
+//     }
+//     return reverseString;
+// }
+// console.log(reverse("Venukumar"));
+
+
+
+// function countVowels(str) {
+//     let count = 0;
+//     let vowels = "aeiou";
+//     let string = str.toLowerCase();
+
+//     for (let i = 0; i < string.length; i++) {
+//         if (vowels.includes(string[i])) {
+//             count = count + 1;
+//         }
+//     }
+//     return count;
+
+// }
+// console.log(countVowels("Venukumar"));
+
+
+// let arr = [12, 24, 6, 94, 23, 93, 32, 42];
+
+// function largestNum(array) {
+//     let max = array[0];
+//     for (i = 0; i < array.length; i++) {
+//         if (max < array[i]) {
+//             max = array[i];
+
+//         }
+//     }
+//     return max;
+// }
+// console.log(largestNum(arr));
+
+
+
+// function evenSum(num) {
+//     let sum = 0;
+//     for (let i = 0; i <= num; i++) {
+//         if (i % 2 === 0) {
+//             sum = sum + i;
+//         }
+//     }
+//     return sum;
+// }
+// console.log(evenSum(10));
+
+
+
+// let array = ["apple", "banana", "pomogranite", "pine apple", "banana", "grapes", "apple", "pine apple"];
+
+
+// function occurance(arr) {
+//     let obj = {};
+//     for (let i = 0; i < array.length; i++) {
+//         if (obj[array[i]]) {
+//             obj[array[i]] = obj[array[i]] + 1;
+
+//         } else {
+//             obj[array[i]] = 1;
+//         }
+//     }
+
+//     console.log(obj);
+//     let keys = Object.keys(obj);
+//     return keys;
+
+// }
+// console.log(occurance(array))
+
+
+
+// let a = "hello,ello"
+
+// function occurance(str) {
+//     let obj = {};
+//     for (let i = 0; i < str.length; i++) {
+//         if (obj[str[i]]) {
+//             obj[str[i]] = obj[str[i]] + 1;
+
+//         } else {
+//             obj[str[i]] = 1;
+//         }
+//     }
+
+//     console.log(obj);
+//     let keys = Object.keys(obj);
+//     return keys;
+
+// }
+// console.log(occurance(a))
+
+
+
+
+
+// let array = ["apple", "banana", "pomogranite", "pine apple", "banana", "grapes", "apple", "pine apple"];
+
+
+// function uniqueValues(arr) {
+//     let unique = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         let exist = unique.includes(arr[i]);
+//         if (!exist) {
+//             unique.push(arr[i]);
+
+
+//         }
+//     }
+//     return unique;
+// }
+// console.log(uniqueValues(array));
+
+
+
+// let array = [10, 23, 43, 32, 82, 9, 2, 4, 28, 35, 53];
+
+
+// function sorting(arr) {
+//     // let sort = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let j = 0; j < arr.length; j++) {
+//             if (arr[j] > arr[i]) {
+//                 let temp = arr[i];
+//                 arr[i] = arr[j];
+//                 arr[j] = temp;
+//             }
+//         }
+//     }
+//     return arr;
+// }
+// console.log(sorting(array));
+
+// let arr = [12, 23, 42, 53, 1, 2, 90, 79, 32];
+
+// for (let i = 0; i < arr.length; i++) {
+//     for (let j = 0; j < arr.length; j++) {
+//         if (arr[i] > arr[j]) {
+//             let temp = arr[i];
+//             arr[i] = arr[j];
+//             arr[j] = temp;
+//         }
+//     }
+// }
+// console.log(arr);
+
+
+
+// let array = [12, 24, [24, 53, 63], 72, [34, 56, [345, 74]]];
+// let flat = [];
+
+// for (let i = 0; i < array.length; i++) {
+//     let item = array[i];
+//     if (Array.isArray(item)) {
+//         for (let j = 0; j < item.length; j++) {
+//             flat.push(item[j]);
+
+//         }
+//     } else {
+//         flat.push(array[i])
+//     }
+
+// }
+// console.log(flat);
+
+// let array = [12, 24, [24, [45, 23, 53], 63], 72, [34, 56, [345, 74]]];
+
+// function flatten(arr) {
+//     let flat = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         let item = arr[i];
+//         if (Array.isArray(item)) {
+//             let flattenItem = flatten(item);
+//             flat = flat.concat(flattenItem);
+//         } else {
+//             flat.push(arr[i]);
+//         }
+//     }
+//     return flat;
+// }
+// console.log(flatten(array));
+
+
+
+
+
+// let flat = [];
+
+// for (let i = 0; i < array.length; i++) {
+//     let item = array[i];
+//     if (Array.isArray(item)) {
+//         for (let j = 0; j < item.length; j++) {
+//             flat.push(item[j]);
+//         }
+//     } else {
+//         flat.push(array[i]);
+//     }
+// }
+// console.log(flat);
+
+
+
+
+// let sentence = "Madam and Hannah saw level, rotor, and racecar on the road."
+// let words = sentence.toLowerCase().split(" ");
+// let palindromes = [];
+// let longest = "";
+
+
+// for (let i = 0; i < words.length; i++) {
+//     let word = words[i];
+//     let rev_word = "";
+//     for (let j = word.length - 1; j >= 0; j--) {
+//         rev_word = rev_word + word[j];
+//     }
+
+//     if (rev_word === word) {
+//         palindromes.push(words);
+//         if (word.length > longest.length) {
+//             longest = word;
+//         }
+//     }
+// }
+// console.log(palindromes);
+// console.log(longest);
+
+
+
+// let sentence = "madam level racecar apple rotor refer";
+// let words = sentence.split(" ");
+
+// let palindromes = [];
+// let longest = "";
+
+// for (let j = 0; j < words.length; j++) {
+//     let word = words[j];
+//     let rev_word = "";
+
+//     // reverse each word using for loop
+//     for (let i = word.length - 1; i >= 0; i--) {
+//         rev_word = rev_word + word[i];
+//     }
+
+//     // check palindrome
+//     if (rev_word === word) {
+//         palindromes.push(word);
+
+//         // find longest palindrome
+//         if (word.length > longest.length) {
+//             longest = word;
+//         }
+//     }
+// }
+
+// console.log("Palindromes:", palindromes);
+// console.log("Longest Palindrome:", longest);
+
+
+
+// function printNum(n) {
+//     if (n === 0) {
+//         return 0;
+//     }
+//     printNum(n - 1);
+//     console.log(n);
+// }
+// (printNum(5));
+
+
+// function factorial(num) {
+//     if (num === 1) {
+//         return 1;
+//     }
+//     return num * factorial(num - 1);
+
+// }
+// console.log(factorial(5));
+
+
+// function factorial(n) {
+//     if (n === 1) {
+//         return 1;
+//     }
+//     return n * factorial(n - 1);
+// }
+// console.log(factorial(10));
+
+
+// let i = 0;
+// function printNumbers() {
+//     console.log(i);
+//     i++;
+//     if (i <= 10) {
+//         printNumbers()
+//     }
+//     return;
+// }
+// // console.log(printNumbers());
+// printNumbers();
+
+// function num(n) {
+//     if (n === 0) {
+//         return 0;
+//     }
+//     num(n - 1);
+//     console.log(n)
+// }
+// num(10);
+
+// function num(n) {
+//     if (n === 0) {
+//         return 0;
+//     }
+//     console.log(n);
+//     num(n - 1);
+// }
+
+// num(10);
+
+// function fact(n) {
+//     if (n === 1) {
+//         return 1;
+//     }
+//     return n * fact(n - 1);
+//     // console.log(n)
+// }
+// console.log(fact(5));
+
+
+// function sum(n) {
+//     if (n === 0) {
+//         return 0;
+//     }
+//     return (n % 10) + sum(Math.floor(n / 10));
+// }
+// console.log(sum(1234));
+
+// function sum(n) {
+//     if (n === 0) {
+//         return 0;
+//     }
+//     return (n % 10) + sum(Math.floor(n / 10));
+// }
+// console.log(sum(12345));
+
+// function fibonacci(n) {
+//     if (n <= 1) {
+//         return n;
+//     }
+//     return fibonacci(n - 1) + fibonacci(n - 2);
+// }
+// console.log(fibonacci(10));
+
+
+// let array = [10, 20, 30, 40, 50];
+
+// array.forEach(function (ele) {
+//     console.log(ele);
+// })
+
+// array.map(function (ele) {
+//     console.log(ele);
+// })
+
+// array.filter(function (ele) {
+//     console.log(ele);
+// })
+
+// console.log(array.filter((ele) => {
+//     return ele === 20;
+// }));
+
+// console.log(array.filter((ele) => {
+//     return ele === 50;
+// }))
+
+
+// let array = ["Venu", "Adinarayana"];
+
+// let [MyName, FatherName] = ["Venu", "Adinarayana"];
+// console.log(MyName);
+// console.log(FatherName);
+// console.log(array);
+
+// let obj = {
+//     fruit: "Apple",
+//     city: "Hyd",
+//     car: "BMW"
+// }
+
+// let { fruit, car, city, ...remainingValues } = {
+//     fruit: "Apple",
+//     city: "Hyd",
+//     car: "BMW",
+//     color: "White",
+//     food: "Biryani",
+//     friend: "Jagan"
+// }
+
+
+// console.log(fruit);
+// console.log(city);
+// console.log(remainingValues);
+
+
+
+// let array = ["apple", "banana", "pomogranite", "grapes", "Sapota"];
+// let array2 = ["Hyd", "Bng", "Chennai", "Vizag"];
+
+// // let fruits = [...array];
+// let arr = [...array, ...array2]
+
+// // fruits.push("PineApple");
+// // console.log(fruits);
+// // console.log(array);
+// console.log(arr);
+
+
+// setTimeout(() => {
+//     console.log("task1");
+// }, 2000)
+
+// setInterval(() => {
+//     console.log("Task 2");
+//     clearInerval()
+// }, 3000)
+
+// let id = setTimeout(() => {
+//     console.log("Venukumar");
+// }, 1000)
+
+// clearInterval(id);
+
+
+// function greet(name, callback) {
+//     console.log("Hello" + name);
+//     callback();
+// }
+// function sayBye() {
+//     console.log("Bye");
+
+// }
+// greet("Venukumar", sayBye);
+
+
+// function add(a, b, callback) {
+//     let result = a + b;
+//     callback(result);
+// }
+// function display(result) {
+//     console.log("result---", result);
+// }
+// add(10, 40, display);
+
+// function mul(a, b, callback) {
+//     let result = a * b;
+//     callback(result);
+// }
+// function display(result) {
+//     console.log("result -----", result)
+// }
+// mul(10, 20, display);
+
+
+// function morning(callback) {
+//     console.log("Good Morning");
+//     callback(evening);
+// }
+// function afternoon(callback) {
+//     console.log("Good Afternoon");
+//     callback(night);
+// }
+// function evening(callback) {
+//     console.log("Good Evening");
+//     callback(afternoon);
+// }
+// function night(callback) {
+//     console.log("Good night");
+// }
+
+// morning(evening);
+// afternoon();
+// evening();
+// night();
+
+
+// function add(a, b, callback) {
+//     console.log(a, b, callback);
+//     callback(a, b);
+// }
+// function logicAdd() {
+//     return a + b;
+
+// }
+// console.log(10, 20, logicAdd);
+
+
+function divide(a, b, callback) {
+    console.log(a, b, callback);
+    if (a === 0 || b === 0) {
+        callback("input is not valid", null);
+        return;
+    } else if (a === 10) {
+        let division = a / b;
+        callback(null, division);
+    } else {
+        console.log("else-----");
+    }
+
+}
+divide(10, 2, (error, result) => {
+    if (error) {
+        console.log("error-----", error);
+    } else {
+        console.log("result -----", result);
+    }
+})
