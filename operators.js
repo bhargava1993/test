@@ -12,6 +12,7 @@ var a = 60, b = 20, c = 30;
 var sub = a - b - c;
 console.log("line --->13", sub);
 
+
 // Multiplication program
 
 var a = 60, b = 20, c = 30;
