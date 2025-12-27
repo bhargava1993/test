@@ -108,7 +108,7 @@
 //         // console.log("user info -----")
 //         if (id) {
 
-//             resolve({ id, name: "Venukumar" });
+//             resolve({ id, name: "Venukumar" });  
 //         } else {
 //             reject("user info is not correct",)
 //         };

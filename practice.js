@@ -1644,23 +1644,501 @@
 // console.log(10, 20, logicAdd);
 
 
-function divide(a, b, callback) {
-    console.log(a, b, callback);
-    if (a === 0 || b === 0) {
-        callback("input is not valid", null);
-        return;
-    } else if (a === 10) {
-        let division = a / b;
-        callback(null, division);
-    } else {
-        console.log("else-----");
-    }
+// function divide(a, b, callback) {
+//     console.log(a, b, callback);
+//     if (a === 0 || b === 0) {
+//         callback("input is not valid", null);
+//         return;
+//     } else if (a === 10) {
+//         let division = a / b;
+//         callback(null, division);
+//     } else {
+//         console.log("else-----");
+//     }
 
+// }
+// divide(10, 2, (error, result) => {
+//     if (error) {
+//         console.log("error-----", error);
+//     } else {
+//         console.log("result -----", result);
+//     }
+// })
+
+
+
+// payment details by using callback chain;
+
+// function getUser(id, next) {
+//     console.log(id, next);
+//     console.log(" fetching user information-----");
+//     next({ id, name: "Venukumar" });
+// }
+// function ordersDetails(user, res) {
+//     console.log(" fetching orders details ");
+//     res({ user, orders: ["laptop", "moblie", "charger"] });
+
+// }
+// function processOrders(processingOrders, next) {
+//     console.log("processing -----", processingOrders);
+//     next({ processingOrders, "payment": "done" });
+// }
+// function payment(paymentDetails) {
+//     if (paymentDetails.payment === "done") {
+//         console.log("sucessfully Order placed", paymentDetails);
+//     } else {
+//         console.log("Order is cancelled", paymentDetails);
+//     }
+// }
+
+
+// getUser(1, (user) => {
+//     console.log("result -----", user);
+//     ordersDetails(user, (orderinfo) => {
+//         console.log("result1 ------", orderinfo);
+//         processOrders(orderinfo, (processinfo) => {
+//             console.log("result2 ------", processinfo);
+//             payment(processinfo);
+
+//         });
+//     });
+// });
+
+
+
+// function userId(id,callback){
+//     console.log(id,callback);
+//     console.log("fetching the information");
+//     callback({"id":1,"name":"Venukumar"});
+// }
+
+// function orderDetails(user,callback){
+//     let orders=["Mobile","Laptop","Charger"]
+//     callback({user,orders});
+
+// }
+
+// function processingOrders(orders,next){
+//     console.log("Processing Orders");
+//     next({orders,"payment":"done"});
+
+// }
+// function payment(paymentDetails){
+//     if(paymentDetails.payment==="done"){
+//         console.log("Your order is successfully placed");
+//     }else{
+//         console.log("Your order is cancelled");
+//     }
+
+// }
+
+
+// userId(1,(user)=>{
+//     console.log("result--------",user);
+//     orderDetails(user,(orderinfo)=>{
+//         console.log("result2--------",orderinfo);
+//         processingOrders(orderinfo,(paymentDetails)=>{
+//             console.log("result3-------",paymentDetails)
+//             payment(paymentDetails)
+//         })
+//     })
+// })
+
+// getUser(1, (user) => {
+//     console.log("result -----", user);
+//     ordersDetails(user, (orderinfo) => {
+//         console.log("result1 ------", orderinfo);
+//         processOrders(orderinfo, (processinfo) => {
+//             console.log("result2 ------", processinfo);
+//             payment(processinfo);
+
+//         });
+//     });
+// });
+
+
+
+
+
+// function getUser(id,next){
+//     console.log(id,next);
+//     console.log("Fetching the user information");
+//     next({"id":1,"name":"Venukumar"});
+// }
+
+// function orderDetails(user,next){
+//     let orders=["Apples","Bananas","Oranges"];
+//     console.log("Order Details");
+//     next({user,orders});
+// }
+
+// function processingOrders(order,next){
+//     console.log("Processing order");
+//     next({order,"payment":"done"});
+// }
+
+// function paymentDetails(payment){
+//     if(payment.payment==="done"){
+//         console.log("Your order is placed",payment);
+//     }else{
+//         console.log("Your order is cancelled");
+//     }
+// }
+
+
+
+
+// getUser(1,(result)=>{
+//     console.log("result-------",result);
+//     orderDetails(result,(result2)=>{
+//         console.log("result2--------",result2);
+//         processingOrders(result2,(result3)=>{
+//             console.log("result3------",result3);
+//             paymentDetails(result3);
+//         })
+
+//     })
+// })
+
+
+
+// function getUser(id){
+//     return new Promise((resolve,reject)=>{
+//         if(id){
+//             resolve({id,"name":"Venukumar"});
+//         }
+//     })
+// }
+
+// function orderDetails(orders){
+//     return new Promise((resolve,reject)=>{
+//         if(orders){
+//             resolve({orders,"order":["Mobile","Laptop","Charger"]})
+//         }
+//     })
+
+// }
+// function processcingDetails(process){
+//     return new Promise((resolve,reject)=>{
+//         if(process){
+//             resolve({process,"payment":"done"});
+//         }
+//     })
+// }
+
+// function paymentDetails(payment){
+//     return new Promise((resolve,reject)=>{
+//         if(payment.payment==="done"){
+//             resolve("Your order is placed");
+//         }
+//     })
+// }
+
+
+// getUser(1).then((user)=>{
+//     console.log("result------",user);
+//     return orderDetails(user);
+// }).then((orderDetails)=>{
+//     console.log("result2-------",orderDetails)
+//     return processcingDetails(orderDetails);
+// }).then((processcingDetails)=>{
+//     console.log("result3---------",processcingDetails);
+//     return paymentDetails(processcingDetails);
+// }).then((paymentDetails)=>{
+//     console.log("result4-------",paymentDetails)
+// })
+
+
+
+
+
+// function getUser(id) {
+//     return new Promise((resolve, reject) => {
+//         // console.log("user info -----")
+//         if (id) {
+
+//             resolve({ id, name: "Venukumar" });
+//         } else {
+//             reject("user info is not correct",)
+//         };
+//     });
+// };
+
+// function orderdetails(ordersDetails) {
+//     return new Promise((resolve, reject) => {
+//         if (ordersDetails) {
+//             resolve({ ordersDetails, "orders": ["Laptop", "MobilePhone", "MobileCharger"] });
+//         } else {
+//             reject("orederDetails is not correct");
+//         };
+
+//     });
+// };
+// function processOrders(process) {
+//     return new Promise((resolve, reject) => {
+//         if (process) {
+//             resolve({ process, "payment": "done" })
+//         } else {
+//             reject("process the details is not corect");
+//         };
+//     });
+// };
+
+// function payments(paymentDetails) {
+//     return new Promise((resolve, reject) => {
+//         if (paymentDetails.payment === "done") {
+//             resolve("Your order placed Successfully");
+//         } else {
+//             reject("Your order is cancelled");
+//         };
+//     });
+// };
+
+// getUser(1)
+//     .then((user) => {
+//         console.log("user infoo ---- ", user);
+//         return orderdetails(user);
+//     }).then((ordersDetails) => {
+//         console.log("orderDetails ------", ordersDetails);
+//         return processOrders(ordersDetails);
+//     }).then((processOrders) => {
+//         console.log("process the orders -----", processOrders);
+//         return payments(processOrders);
+//     }).then((paymentDetails) => {
+//         console.log("result ----", paymentDetails);
+//     }).catch((err) => {
+//         console.log(err);
+//     });
+
+
+// function add(a, b, next) {
+//     console.log("Addition");
+//     next(a + b);
+// }
+
+// function sub(a, b, next) {
+//     console.log("subtraction");
+//     next(b-a);
+// }
+
+// function mul(a, b, next) {
+//     console.log("multiplication");
+//     next(a * b);
+// }
+
+
+// add(5,10,(addResult)=>{
+//     console.log("addResult---------",addResult);
+//     sub(20,50,(subResult)=>{
+//         console.log("subResult----------",subResult);
+//         mul(20,4,(mulResult)=>{
+//             console.log("mulResult---------",mulResult);
+//         })
+//     })
+// })
+
+
+
+// function add(a,b){
+//     return new Promise((resolve,reject)=>{
+    
+//         if(true){
+//             let add=a+b;
+//             resolve(add);
+//         }else{
+//             reject("error");
+//         }
+//     })
+// }
+
+
+// function sub(a,b){
+//     return new Promise((resolve,reject)=>{
+//         if(true){
+//             let subtraction=a-b;
+//             resolve(subtraction);
+//         }else{
+//             reject("error");
+//         }
+//     })
+// }
+
+
+// function mul(a,b){
+//     return new Promise((resolve,reject)=>{
+//         if(true){
+//             let multiplication=a*b;
+//             resolve(multiplication);
+//         }else{
+//             reject("error");
+//         }
+//     })
+// }
+
+
+
+// add(10,20).then((result)=>{
+//     console.log("result----------",result);
+// })
+
+// sub(10,20).then((subResult)=>{
+//     console.log("subResult-------",subResult);
+// })
+
+// mul(10,20).then((mulResult)=>{
+//     console.log("mulResult-------",mulResult);
+// })
+
+
+
+// function multiply(num,callback){
+//     callback(num*2);
+// }
+
+// function add(num,callback){
+//     callback(num+5);
+// }
+
+// function sub(num,callback){
+//     callback(num-4);
+// }
+
+
+// multiply(10,(mul)=>{
+//     console.log("multiply--------",mul);
+//     add(mul,(adding)=>{
+//         console.log("adding-------",adding);
+//         sub(adding,(subResult)=>{
+//             console.log("subResult--------",subResult)
+//         });
+//     })
+// })
+
+
+// function mul(num){
+//     return new Promise((resolve)=>{
+//         if(num){
+//             let multiply=num*10;
+//             resolve(multiply)
+//         }
+//     })
+// }
+
+
+// function add(num){
+//     return new Promise((resolve)=>{
+//         if(num){
+//             let adding=num+10
+//             resolve(adding);
+//         }
+//     })
+// }
+
+
+// function sub(num){
+//     return new Promise((resolve)=>{
+//         if(num){
+//             let subtraction=num-40
+//             resolve(subtraction);
+//         }
+//     })
+// }
+
+
+// mul(5).then((mulResult)=>{
+//     return(add(mulResult));
+// }).then((addResult)=>{
+//     console.log (sub(addResult));
+// }).then((subResult)=>{
+//     console.log (subResult);
+// })
+
+
+// mul(5).then((mulResult)=>{
+//     console.log("mulResult--------",(mulResult));
+// })
+// add(5).then((addResult)=>{
+//     console.log("addResult---------",(addResult));
+// })
+// sub(5).then((subResult)=>{
+//     console.log("subResult-----------",subResult);
+// })
+
+
+
+// async function calculate(){
+//     let mul1= await mul(5);
+//     let add1=await add(mul1);
+//     let sub1= await sub(add1);
+
+//     console.log("Final Result--",sub1)
+// }
+
+// calculate();
+
+
+
+// function getUser(id,callback){
+//     callback({id,"id":1 , "name": "Venukumar"});
+// }
+
+// function posts(user,callback){
+//     callback({user,"posts":50, "followers" : "5K"});
+// }
+
+// function comments (com,callback){
+//     callback({com,"comments": ["Nice","Good","Excellent"]});
+// }
+
+// getUser(1,(result)=>{
+//     console.log("User details-------",result);
+//     posts(result,(userPosts)=>{
+//         console.log("User Posts and followers-------",userPosts);
+//         comments(userPosts,(postComments)=>{
+//             console.log("Comments--------",postComments)
+//         })
+//     })
+// })
+
+
+function getUser(id){
+    return new Promise((resolve)=>{
+        resolve({id,"name":"Venukumar"});
+    })
 }
-divide(10, 2, (error, result) => {
-    if (error) {
-        console.log("error-----", error);
-    } else {
-        console.log("result -----", result);
-    }
-})
+
+function posts(user){
+    return new Promise((resolve)=>{
+        resolve({user,"posts":50, "followers" : "5K"});
+    })
+}
+
+function comments(data){
+    return new Promise((resolve)=>{
+        resolve({data,"comments": ["Nice","Good","Excellent"]});
+    })
+}
+
+// getUser(1).then((userinfo)=>{
+//     console.log("user information-------",userinfo);
+//     return posts(userinfo)
+// }).then((postInfo)=>{
+//     console.log("posts and followers-------",postInfo)
+//     return comments(postInfo)
+// }).then((commentinfo)=>{
+//     console.log("comments--------",commentinfo);
+// }).catch((error)=>{
+//     console.log("error---------",error);
+// }).finally((final)=>{
+//     console.log("finally--------",final)
+// })
+
+
+async function calculate(){
+    let getUser1=await getUser(1);
+    let posts1= await posts(getUser1);
+    let comments1=await comments(posts1);
+
+    console.log("comments---",comments1);
+}
+calculate();
