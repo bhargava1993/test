@@ -1941,7 +1941,7 @@
 
 // function add(a,b){
 //     return new Promise((resolve,reject)=>{
-    
+
 //         if(true){
 //             let add=a+b;
 //             resolve(add);
@@ -2101,21 +2101,21 @@
 // })
 
 
-function getUser(id){
-    return new Promise((resolve)=>{
-        resolve({id,"name":"Venukumar"});
+function getUser(id) {
+    return new Promise((resolve) => {
+        resolve({ id, "name": "Venukumar" });
     })
 }
 
-function posts(user){
-    return new Promise((resolve)=>{
-        resolve({user,"posts":50, "followers" : "5K"});
+function posts(user) {
+    return new Promise((resolve) => {
+        resolve({ user, "posts": 50, "followers": "5K" });
     })
 }
 
-function comments(data){
-    return new Promise((resolve)=>{
-        resolve({data,"comments": ["Nice","Good","Excellent"]});
+function comments(data) {
+    return new Promise((resolve) => {
+        resolve({ data, "comments": ["Nice", "Good", "Excellent"] });
     })
 }
 
@@ -2152,18 +2152,18 @@ function comments(data){
 
 // console.log(Math.floor(a));
 
-let b="Venukumar";
-console.log(b.toUpperCase());
+// let b="Venukumar";
+// console.log(b.toUpperCase());
 
 
-console.log(b.toLowerCase());
+// console.log(b.toLowerCase());
 
-let c= "         Venukumar     ";
+// let c= "         Venukumar     ";
 
 // console.log(c.trim());
 
 
-let d= "V"
+// let d= "V"
 // console.log(d.charAt());
 
 // console.log(d.charCodeAt());
@@ -2173,11 +2173,382 @@ let d= "V"
 // console.log(b.includes("r"));
 
 
-console.log(b.startsWith("V"));
+// console.log(b.startsWith("V"));
 
-console.log(b.startsWith("t"));
+// console.log(b.startsWith("t"));
 
-console.log(b.endsWith("K"));
-console.log(b.endsWith("r"));
+// console.log(b.endsWith("K"));
+// console.log(b.endsWith("r"));
 
-console.log(b.length);
+// console.log(b.length);
+
+
+// for(let i=0;i<=100;i++){
+//     console.log(i);
+// }
+
+// for(let i=100;i>=0;i--){
+//     console.log(i);
+// }
+
+
+// for(let i=0;i<=100;i++){
+//     if(i%2==0){
+//         console.log(i);
+//     }
+// }
+
+// for(let i=0;i<=100;i++){
+//     if(i%2!=0){
+//         console.log(i);
+//     }
+// }
+
+
+// let add=0;
+// for(let i=0;i<=20;i++){
+//     add= add+i;
+
+// }
+// console.log(add);
+
+
+// let array=[1,2,3,4];
+
+// for(let i=0;i<array.length;i++){
+//     console.log(array[i]);
+// }
+
+
+
+
+// let array=[10,20,30,40,50];
+// let add=0;
+
+// for (let i=0;i<array.length;i++){
+//     add=add+array[i];
+
+// }
+// console.log(add);
+
+
+// let array=[10,20,30,40,50];
+// let array1=[10,20,30,40,50];
+
+// let total=[];
+// for(let i=0;i<array.length;i++){
+//     total[i]= array[i] + array1[i];
+// }
+
+// console.log(total);
+
+
+
+// let num=5;
+
+// let result=1;
+// for(let i=1;i<=num;i++){
+//     result=result*i
+// }
+// console.log(result);
+
+// for(let i=1;i<=10;i++){
+//     let result=1;
+//     // result=num*i;
+//     result= num + "*" + i + "=" + num*i;
+//     console.log(result);
+// }
+
+// let word = "Level";
+
+// let lower_word=word.toLowerCase();
+
+
+// let rev_word="";
+// for(let i=lower_word.length-1;i>=0;i--){
+//     rev_word=rev_word + lower_word[i];
+
+// }
+// console.log(rev_word);
+
+// if(rev_word===lower_word){
+//     console.log("It is a palindrome");
+// }
+
+
+
+
+// let num=151;
+
+// let numbers=num.toString();
+// console.log(numbers);
+// console.log(typeof numbers);
+
+// rev_num="";
+// for (let i=numbers.length-1;i>=0;i--){
+//     rev_num=rev_num + numbers[i];
+// }
+// console.log(rev_num);
+
+// if(rev_num===numbers){
+//     console.log("It is a palindrome");
+// }
+
+
+// let num=11;
+
+// let isPrime=true;
+
+// for(let i=2;i<num;i++){
+//     if(num%i==0){
+//         isPrime=false;
+//         break;
+//     }
+// }
+
+// if(num<2){
+//     console.log("It is not a prime number");
+// }else if(isPrime){
+//     console.log("It is a prime number");
+// }else{
+//     console.log("It is not a prime number")
+// }
+
+
+// let fruits=["Apple","Banana","PineApple","Grapes"];
+
+// for (let i=0;i<fruits.length;i++){
+//     if(fruits[i]==="Banana"){
+//         console.log("Value is exists");
+//     }
+// }
+
+// console.log(fruits.includes("Grapes"));
+
+// for (let i=0;i<fruits.length;i++){
+//     if(fruits[i]==="Banana"){
+//         console.log(i);
+//     }
+// }
+
+// console.log(fruits.indexOf("Grapes"));
+
+
+
+// for (let i=0;i<fruits.length;i++){
+//     if(fruits[i]==="Banana"){
+//         fruits[i]="Oranges";
+//     }
+// }
+// console.log(fruits);
+
+
+
+// let fruits=["Apple","Banana","PineApple","Grapes","Oranges","Pomogranites","Mangos"];
+
+// extracted_fruits=[];
+
+// for(let i=0;i<fruits.length;i++){
+//     if(i>1 && i<6){
+
+//     extracted_fruits.push(fruits[i]);
+//     }
+
+// }
+
+// console.log(extracted_fruits);
+
+
+// let fruits=["Apple","Banana","PineApple","Grapes","Oranges","Pomogranites","Mangos","Apple","Oranges","Grapes","Oranges","Banana"];
+
+// let unique=[];
+
+// for (let i=0;i<fruits.length;i++){
+//     exists= unique.includes(fruits[i]);
+
+//     if(!exists){
+//         unique.push(fruits[i]);
+//     }
+// }
+
+// console.log(unique);
+
+// obj={};
+
+// for(let i=0;i<fruits.length;i++){
+//     if(obj[fruits[i]]){
+//         obj[fruits[i]] = obj[fruits[i]] +1;
+//     }else{
+//         obj[fruits[i]] =1;
+//     }
+// }
+
+// console.log(obj);
+
+// console.log(Object.keys(obj));
+
+
+// let fruits={
+//     "Mangos":3,
+//     "Grapes":5,
+//     "Apple":4,
+
+// }
+
+// fruits.Oranges=4;
+// console.log(fruits);
+// fruits["Pomogranites"] =10;
+// console.log(fruits);
+
+// console.log(Object.keys(fruits));
+// console.log(Object.values(fruits));
+
+
+// delete fruits.Oranges;
+// console.log(fruits);
+
+
+// delete fruits["Pomogranites"];
+// console.log(fruits);
+
+
+// console.log(fruits);
+// console.log(Object.keys(fruits));
+// console.log(Object.values(fruits));
+
+// let keys=Object.keys(fruits);
+// // console.log(keys)
+
+// for(let i=0;i<keys.length;i++){
+//     console.log(keys[i]);
+//     console.log(fruits[keys[i]]);
+//     console.log(keys[i] + "=" + fruits[keys[i]]);
+// }
+
+
+// let array=["Venukumar","Apples","Hyd","Bng"];
+
+// let reverse_arr=[];
+
+// for (let i=array.length-1;i>=0;i--){
+//     reverse_arr.push(array[i]);
+// }
+// console.log(reverse_arr);
+
+
+// console.log(array.reverse());
+
+
+// let a="Venukumar and Venukumar and Venukumae";
+
+// let lower = a.toLowerCase();
+
+// console.log(lower);
+
+// let vowels="aeiou";
+// let count=0;
+
+// for(let i=0;i<lower.length;i++){
+//     if(vowels.includes(lower[i])){
+//         count=count+1;
+//     }
+
+// }
+// console.log(count);
+
+
+// let a=[10,302,42,429,112,4];
+
+// let max=a[0];
+// for(let i=0;i<a.length;i++){
+//     if(max < a[i] ){
+//         max = a[i];
+//     }
+// }
+// console.log("Maximum value of an arry---",max);
+
+
+// let min=a[0];
+// for(let i=0;i<a.length;i++){
+//     if(min > a[i] ){
+//         min = a[i];
+//     }
+// }
+// console.log("Minimum value of an array----",min);
+
+// let num = 10;
+
+// let a = -1;
+// let b = 1;
+
+// for (let i = 2; i <= num; i++) {
+
+//     let c = a + b;
+//     console.log(c);
+//     // if (c <= num) {
+//         a = b;
+//         b = c;
+//     // }
+// }
+
+
+// let a= "EArth";
+// let b="HearT";
+
+
+// let sortedWord1= a.toLowerCase().split("").sort().join("");
+// let sortedWord2= b.toLowerCase().split("").sort().join("");
+
+// console.log(sortedWord1);
+// console.log(sortedWord2);
+
+// if(sortedWord1===sortedWord2){
+//     console.log("It is a angram word");
+// }
+
+
+
+// let num = 153;
+
+// let temp=num;
+// let sum=0;
+
+// let digits =num.toString().length;
+// console.log(digits);
+
+// for (let i=0;i<digits;i++){
+//     let digit = temp %10;
+//     sum = sum+ digit ** digits;
+//     temp= Math.floor(temp/10);
+// }
+
+// if(num===sum){
+//     console.log("The number is an armstrong");
+// }
+
+
+
+
+
+
+let num =8208;
+let temp= num;
+
+let sum=0;
+
+let digits = temp.toString().length;
+
+for(let i=0;i<num;i++){
+    let digit= temp%10;
+    sum = sum + digit ** digits ;
+    temp= Math.floor(temp/10);
+
+    
+}
+console.log(sum);
+
+if(num=== sum){
+    console.log("It is an armstrong number");
+}else{
+    console.log("It is not an armstrong number");
+}
