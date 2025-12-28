@@ -2134,11 +2134,50 @@ function comments(data){
 // })
 
 
-async function calculate(){
-    let getUser1=await getUser(1);
-    let posts1= await posts(getUser1);
-    let comments1=await comments(posts1);
+// async function calculate(){
+//     let getUser1=await getUser(1);
+//     let posts1= await posts(getUser1);
+//     let comments1=await comments(posts1);
 
-    console.log("comments---",comments1);
-}
-calculate();
+//     console.log("comments---",comments1);
+// }
+// calculate();
+
+
+
+// let a = 1020.9;
+// console.log(Math.ceil(a));
+
+// console.log(Math.round(a));
+
+// console.log(Math.floor(a));
+
+let b="Venukumar";
+console.log(b.toUpperCase());
+
+
+console.log(b.toLowerCase());
+
+let c= "         Venukumar     ";
+
+// console.log(c.trim());
+
+
+let d= "V"
+// console.log(d.charAt());
+
+// console.log(d.charCodeAt());
+
+// console.log(b.indexOf("k"));
+
+// console.log(b.includes("r"));
+
+
+console.log(b.startsWith("V"));
+
+console.log(b.startsWith("t"));
+
+console.log(b.endsWith("K"));
+console.log(b.endsWith("r"));
+
+console.log(b.length);
