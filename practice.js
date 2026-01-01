@@ -2531,24 +2531,220 @@ function comments(data) {
 
 
 
-let num =8208;
-let temp= num;
+// let num =8208;
+// let temp= num;
 
-let sum=0;
+// let sum=0;
 
-let digits = temp.toString().length;
+// let digits = temp.toString().length;
 
-for(let i=0;i<num;i++){
-    let digit= temp%10;
-    sum = sum + digit ** digits ;
-    temp= Math.floor(temp/10);
+// for(let i=0;i<num;i++){
+//     let digit= temp%10;
+//     sum = sum + digit ** digits ;
+//     temp= Math.floor(temp/10);
 
+
+// }
+// console.log(sum);
+
+// if(num=== sum){
+//     console.log("It is an armstrong number");
+// }else{
+//     console.log("It is not an armstrong number");
+// }
+
+
+
+// function sample(){
+//     console.log("It is a function")
+// }
+
+// sample();
+
+
+// function add(a,b,c){
+//     return a+b+c;
+// }
+
+// console.log(add(1,2,3));
+
+
+// function divide (a,b){
+//     if(typeof a === "number" && typeof b === "number"){
+//         return a/b;
+//     }else{
+//         console.log("It is not valid input");
+//     }
+// }
+
+// console.log(divide(10,5));
+
+
+// function student(student1 = "Present", student2 = "Absent", student3="Absent") {
     
-}
-console.log(sum);
+//     console.log(student1, student2, student3)
+//     return true;
+// }
+// let student1= "Present";
+// let student2 ="Present";
+// let student3="Present";
+// // console.log(student(student1, student2, student3));
+// // console.log(student(student1, null, student3))
+// // console.log(student(student1,null,student3))
+// // console.log(student(student1, student2))
+// // console.log(student(student1,student3))
+// // console.log(student(null,student2,student3))
+// // console.log(student(student1, student3, null))
+// // console.log(student(student3));
+// console.log(student(student2));
+// console.log(student(student1));
 
-if(num=== sum){
-    console.log("It is an armstrong number");
-}else{
-    console.log("It is not an armstrong number");
-}
+
+
+// let multiply=function mul(a,b){
+//     console.log(a*b)
+//     return true;
+// }
+
+// console.log(multiply(4,6));
+
+
+// let array = [1,2,3,4,5,6,7,8];
+
+// array.forEach(function (ele){
+//     console.log(ele)
+// });
+
+
+// array.forEach(function (ele){
+//     console.log(ele);
+// })
+
+// array.map(function (ele){
+//     console.log(ele);
+// })
+
+// array.map((ele)=>{
+//     console.log(ele)
+// })
+
+// array.filter((ele)=>{
+//     if(ele===2){
+//         console.log(ele)
+//     }
+// })
+
+
+// const sample= (a,b)=>{
+//     return a+b;
+// }
+
+// console.log(sample(8,4));
+
+
+// let result = (ele)=>{
+//     console.log(ele);
+//     if(typeof ele==="number"){
+//         console.log("It is a number");
+//     }else{
+//         console.log("It is not a number");
+//     }
+//     return true;
+// }
+// console.log(result("Venu"));
+// console.log(result(24));
+
+// console.log(result(24));
+
+
+
+// let array = [2,3,42,14,21,34,23,53,64];
+// console.log(array.filter((ele)=>ele===34));
+    
+
+// console.log(array.map((ele)=>ele===21));
+
+
+
+// function prime(num){
+//     isPrime=true;
+//     for(let i=2;i<num;i++){
+//         if(num%i===0){
+//             isPrime=false;
+//             break
+//         }
+//     }
+
+//    if(num<2){
+//         console.log("It is not a prime number");
+//     }else if(isPrime){
+//         console.log("It is a prime number");
+//     }else{
+//         console.log("It is not a prime number");
+//     }
+//     return true;
+// }
+
+// console.log(prime(11));
+// console.log(prime(24));
+// console.log(prime(49));
+// console.log(prime(89));
+// console.log(prime(111));
+
+
+
+
+// let a = [ 12,23,12 ,34,23,54,66]
+// function max(array){
+//     let maxNum = array[0];
+//     for(let i=0;i<array.length;i++){
+//         if(array[i]>maxNum){
+//             maxNum = array[i];
+//         }
+//     }
+//     return maxNum;
+// }
+
+// console.log(max(a));
+
+
+
+// let fruits = ["apple","banana","apple","orange","pineapple","orange","grapes","sapota","pineapple"];
+// let city = ["hyd","bng","hyd","bng","chennai","Vizag"];
+
+// // function uniqueValues(array){
+// //     let unique=[];
+    
+// //     for(let i=0;i<array.length;i++){
+// //         let exists= unique.includes(array[i]);
+// //         if(!exists){
+// //             unique.push(array[i]);
+// //         }
+// //     }
+// //     return unique;
+// // }
+
+// // console.log(uniqueValues(fruits));
+// // console.log(uniqueValues(city));
+
+
+// function unique_values(array){
+//     let obj={};
+
+//     for(let i=0;i<array.length;i++){
+//         if(obj[array[i]]){
+//             obj[array[i]] = obj[array[i]] +1;
+//         }else{
+//             obj[array[i]] =1
+//         }
+//     }
+//     console.log(obj);
+//     console.log(Object.values(obj));
+//     return Object.keys(obj);
+
+// }
+
+// console.log(unique_values(fruits));
+// console.log(unique_values(city));
+
+
